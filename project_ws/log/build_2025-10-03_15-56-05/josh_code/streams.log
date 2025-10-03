@@ -1,0 +1,19 @@
+[0.971s] Invoking command in '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/josh_code': PYTHONPATH=/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/josh_code/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/josh_code/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/josh_code/build --no-deps symlink_data --force
+[1.247s] running develop
+[1.348s] running egg_info
+[1.349s] writing Josh_Code.egg-info/PKG-INFO
+[1.349s] writing dependency_links to Josh_Code.egg-info/dependency_links.txt
+[1.349s] writing entry points to Josh_Code.egg-info/entry_points.txt
+[1.350s] writing requirements to Josh_Code.egg-info/requires.txt
+[1.350s] writing top-level names to Josh_Code.egg-info/top_level.txt
+[1.352s] reading manifest file 'Josh_Code.egg-info/SOURCES.txt'
+[1.354s] writing manifest file 'Josh_Code.egg-info/SOURCES.txt'
+[1.356s] running build_ext
+[1.356s] Creating /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/josh_code/lib/python3.10/site-packages/Josh-Code.egg-link (link to .)
+[1.356s] Installing grasp_matrix_node script to /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/josh_code/lib/Josh_Code
+[1.357s] 
+[1.357s] Installed /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/josh_code
+[1.357s] running symlink_data
+[1.357s] symbolically linking /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/josh_code/resource/Josh_Code -> /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/josh_code/share/ament_index/resource_index/packages
+[1.357s] symbolically linking /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/josh_code/package.xml -> /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/josh_code/share/Josh_Code
+[1.378s] Invoked command in '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/josh_code' returned '0': PYTHONPATH=/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/josh_code/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/josh_code/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/josh_code/build --no-deps symlink_data --force

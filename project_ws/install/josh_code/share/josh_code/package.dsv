@@ -1,0 +1,6 @@
+source;share/josh_code/hook/pythonpath.ps1
+source;share/josh_code/hook/pythonpath.dsv
+source;share/josh_code/hook/pythonpath.sh
+source;share/josh_code/hook/ament_prefix_path.ps1
+source;share/josh_code/hook/ament_prefix_path.dsv
+source;share/josh_code/hook/ament_prefix_path.sh

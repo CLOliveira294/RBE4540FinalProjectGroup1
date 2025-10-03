@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/josh_code/josh_code.egg-info/PKG-INFO
+../../build/josh_code/josh_code.egg-info/SOURCES.txt
+../../build/josh_code/josh_code.egg-info/dependency_links.txt
+../../build/josh_code/josh_code.egg-info/entry_points.txt
+../../build/josh_code/josh_code.egg-info/requires.txt
+../../build/josh_code/josh_code.egg-info/top_level.txt
+../../build/josh_code/josh_code.egg-info/zip-safe
+josh_code/Grasp_function_Individual_Josh.py
+josh_code/__init__.py
+josh_code/grasp_matrix_node.py
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

@@ -1,0 +1,18 @@
+[0.730s] Invoking command in '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/src/josh_code': PYTHONPATH=/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/josh_code/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/josh_code/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/josh_code build --build-base /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/josh_code/build install --record /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/josh_code/install.log --single-version-externally-managed install_data
+[0.926s] running egg_info
+[0.926s] creating ../../build/josh_code/josh_code.egg-info
+[0.926s] writing ../../build/josh_code/josh_code.egg-info/PKG-INFO
+[0.927s] writing dependency_links to ../../build/josh_code/josh_code.egg-info/dependency_links.txt
+[0.927s] writing entry points to ../../build/josh_code/josh_code.egg-info/entry_points.txt
+[0.927s] writing requirements to ../../build/josh_code/josh_code.egg-info/requires.txt
+[0.927s] writing top-level names to ../../build/josh_code/josh_code.egg-info/top_level.txt
+[0.927s] writing manifest file '../../build/josh_code/josh_code.egg-info/SOURCES.txt'
+[0.929s] reading manifest file '../../build/josh_code/josh_code.egg-info/SOURCES.txt'
+[0.930s] writing manifest file '../../build/josh_code/josh_code.egg-info/SOURCES.txt'
+[0.930s] running build
+[0.930s] running build_py
+[0.930s] running install
+[0.931s] running install_lib
+[0.932s] running install_data
+[0.932s] error: can't copy 'resource/josh_code': doesn't exist or not a regular file
+[0.947s] Invoked command in '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/src/josh_code' returned '1': PYTHONPATH=/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/josh_code/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/josh_code/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/josh_code build --build-base /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/josh_code/build install --record /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/josh_code/install.log --single-version-externally-managed install_data

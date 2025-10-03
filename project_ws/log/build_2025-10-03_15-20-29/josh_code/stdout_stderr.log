@@ -1,0 +1,19 @@
+running develop
+running egg_info
+creating Josh_Code.egg-info
+writing Josh_Code.egg-info/PKG-INFO
+writing dependency_links to Josh_Code.egg-info/dependency_links.txt
+writing entry points to Josh_Code.egg-info/entry_points.txt
+writing requirements to Josh_Code.egg-info/requires.txt
+writing top-level names to Josh_Code.egg-info/top_level.txt
+writing manifest file 'Josh_Code.egg-info/SOURCES.txt'
+reading manifest file 'Josh_Code.egg-info/SOURCES.txt'
+writing manifest file 'Josh_Code.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/josh_code/lib/python3.10/site-packages/Josh-Code.egg-link (link to .)
+
+Installed /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/josh_code
+running symlink_data
+symbolically linking /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/josh_code/resource/Josh_Code -> /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/josh_code/share/ament_index/resource_index/packages
+creating /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/josh_code/share/Josh_Code
+symbolically linking /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/josh_code/package.xml -> /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/josh_code/share/Josh_Code

@@ -1,6 +1,1 @@
-setup.py
-pcl/__init__.py
-pcl.egg-info/PKG-INFO
-pcl.egg-info/SOURCES.txt
-pcl.egg-info/dependency_links.txt
-pcl.egg-info/top_level.txt
+/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/pcl/ament_cmake_python/pcl/pcl.egg-info/SOURCES.txt

@@ -1,0 +1,28 @@
+running egg_info
+writing ../../build/josh_code/Josh_Code.egg-info/PKG-INFO
+writing dependency_links to ../../build/josh_code/Josh_Code.egg-info/dependency_links.txt
+writing entry points to ../../build/josh_code/Josh_Code.egg-info/entry_points.txt
+writing requirements to ../../build/josh_code/Josh_Code.egg-info/requires.txt
+writing top-level names to ../../build/josh_code/Josh_Code.egg-info/top_level.txt
+reading manifest file '../../build/josh_code/Josh_Code.egg-info/SOURCES.txt'
+writing manifest file '../../build/josh_code/Josh_Code.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/josh_code/build
+creating /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/josh_code/build/lib
+creating /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/josh_code/build/lib/josh_code
+copying josh_code/__init__.py -> /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/josh_code/build/lib/josh_code
+copying josh_code/Grasp_function_Josh.py -> /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/josh_code/build/lib/josh_code
+running install
+running install_lib
+creating /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/josh_code/lib/python3.10/site-packages/josh_code
+copying /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/josh_code/build/lib/josh_code/__init__.py -> /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/josh_code/lib/python3.10/site-packages/josh_code
+copying /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/josh_code/build/lib/josh_code/Grasp_function_Josh.py -> /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/josh_code/lib/python3.10/site-packages/josh_code
+byte-compiling /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/josh_code/lib/python3.10/site-packages/josh_code/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/josh_code/lib/python3.10/site-packages/josh_code/Grasp_function_Josh.py to Grasp_function_Josh.cpython-310.pyc
+running install_data
+running install_egg_info
+Copying ../../build/josh_code/Josh_Code.egg-info to /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/josh_code/lib/python3.10/site-packages/Josh_Code-0.0.0-py3.10.egg-info
+running install_scripts
+Installing grasp_function_josh_node script to /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/josh_code/lib/Josh_Code
+writing list of installed files to '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/josh_code/install.log'

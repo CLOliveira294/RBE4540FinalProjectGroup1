@@ -1,0 +1,499 @@
+[0.000000] (-) TimerEvent: {}
+[0.000208] (josh_code) JobQueued: {'identifier': 'josh_code', 'dependencies': OrderedDict()}
+[0.000330] (pcl) JobQueued: {'identifier': 'pcl', 'dependencies': OrderedDict()}
+[0.000364] (vbm_project_env) JobQueued: {'identifier': 'vbm_project_env', 'dependencies': OrderedDict()}
+[0.000904] (josh_code) JobStarted: {'identifier': 'josh_code'}
+[0.009854] (pcl) JobStarted: {'identifier': 'pcl'}
+[0.014724] (vbm_project_env) JobStarted: {'identifier': 'vbm_project_env'}
+[0.099760] (-) TimerEvent: {}
+[0.200125] (-) TimerEvent: {}
+[0.300990] (-) TimerEvent: {}
+[0.334856] (pcl) JobProgress: {'identifier': 'pcl', 'progress': 'cmake'}
+[0.336127] (pcl) Command: {'cmd': ['/usr/bin/cmake', '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/src/pcl', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl'], 'cwd': '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/pcl', 'env': OrderedDict([('MAIL', '/var/mail/josh_ym_lee'), ('USER', 'josh_ym_lee'), ('SSH_AGENT_PID', '1604'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/josh_ym_lee/ros2_ws/install/gazebo_msgs/lib:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_wait_set/lib:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_composition/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/josh_ym_lee/catkin_ws/devel/lib'), ('HOME', '/home/josh_ym_lee'), ('OLDPWD', '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1807'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/josh_ym_lee/install:/home/josh_ym_lee/ros2_ws/install:/home/josh_ym_lee/rbe4540-ros/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'josh_ym_lee'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/josh_ym_lee/catkin_ws/devel/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/josh_ym_lee/ros2_ws/install/rrbot_description/share'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/home/josh_ym_lee/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/snap/bin'), ('SESSION_MANAGER', 'local/joshserver3009:@/tmp/.ICE-unix/1776,unix/joshserver3009:/tmp/.ICE-unix/1776'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/029362d8_dd33_4aea_8231_8a371277c71b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'GNOME'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/home/josh_ym_lee/.Xauthority'), ('GNOME_TERMINAL_SERVICE', ':1.101'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/josh_ym_lee/ros2_ws/install/rrbot_gazebo:/home/josh_ym_lee/ros2_ws/install/rrbot_description:/home/josh_ym_lee/ros2_ws/install/opencv_test_py:/home/josh_ym_lee/ros2_ws/install/launch_testing_examples:/home/josh_ym_lee/ros2_ws/install/gazebo_msgs:/home/josh_ym_lee/ros2_ws/install/gazebo_dev:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_guard_conditions:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_executors:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_wait_set:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_multithreaded_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_timer:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_composition:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_cbg_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_async_client:/home/josh_ym_lee/rbe4540-ros/install/josh_rbe_package:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://127.0.0.1:11311'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/pcl'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('CLUTTER_IM_MODULE', 'ibus'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/josh_ym_lee/ros2_ws/install/opencv_test_py/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/gazebo_msgs/local/lib/python3.10/dist-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_service/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_publisher/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_client/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_guard_conditions/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_executors/lib/python3.10/site-packages:/home/josh_ym_lee/rbe4540-ros/install/josh_rbe_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:'), ('ROS_HOSTNAME', '127.0.0.1'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/josh_ym_lee/ros2_ws/install/rrbot_gazebo:/home/josh_ym_lee/ros2_ws/install/rrbot_description:/home/josh_ym_lee/ros2_ws/install/gazebo_msgs:/home/josh_ym_lee/ros2_ws/install/gazebo_dev:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_wait_set:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_multithreaded_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_timer:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_composition:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_cbg_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_async_client:/home/josh_ym_lee/ros2_ws/install/opencv_test_py:/home/josh_ym_lee/ros2_ws/install/launch_testing_examples:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_guard_conditions:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_executors:/home/josh_ym_lee/rbe4540-ros/install/josh_rbe_package:/opt/ros/humble:/home/josh_ym_lee/catkin_ws/devel')]), 'shell': False}
+[0.341495] (vbm_project_env) JobProgress: {'identifier': 'vbm_project_env', 'progress': 'cmake'}
+[0.342654] (vbm_project_env) Command: {'cmd': ['/usr/bin/cmake', '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/src/vbm_project_env', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env'], 'cwd': '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/vbm_project_env', 'env': OrderedDict([('MAIL', '/var/mail/josh_ym_lee'), ('USER', 'josh_ym_lee'), ('SSH_AGENT_PID', '1604'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/josh_ym_lee/ros2_ws/install/gazebo_msgs/lib:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_wait_set/lib:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_composition/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/josh_ym_lee/catkin_ws/devel/lib'), ('HOME', '/home/josh_ym_lee'), ('OLDPWD', '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1807'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/josh_ym_lee/install:/home/josh_ym_lee/ros2_ws/install:/home/josh_ym_lee/rbe4540-ros/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'josh_ym_lee'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/josh_ym_lee/catkin_ws/devel/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/josh_ym_lee/ros2_ws/install/rrbot_description/share'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/home/josh_ym_lee/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/snap/bin'), ('SESSION_MANAGER', 'local/joshserver3009:@/tmp/.ICE-unix/1776,unix/joshserver3009:/tmp/.ICE-unix/1776'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/029362d8_dd33_4aea_8231_8a371277c71b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'GNOME'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/home/josh_ym_lee/.Xauthority'), ('GNOME_TERMINAL_SERVICE', ':1.101'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/josh_ym_lee/ros2_ws/install/rrbot_gazebo:/home/josh_ym_lee/ros2_ws/install/rrbot_description:/home/josh_ym_lee/ros2_ws/install/opencv_test_py:/home/josh_ym_lee/ros2_ws/install/launch_testing_examples:/home/josh_ym_lee/ros2_ws/install/gazebo_msgs:/home/josh_ym_lee/ros2_ws/install/gazebo_dev:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_guard_conditions:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_executors:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_wait_set:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_multithreaded_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_timer:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_composition:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_cbg_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_async_client:/home/josh_ym_lee/rbe4540-ros/install/josh_rbe_package:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://127.0.0.1:11311'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/vbm_project_env'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('CLUTTER_IM_MODULE', 'ibus'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/josh_ym_lee/ros2_ws/install/opencv_test_py/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/gazebo_msgs/local/lib/python3.10/dist-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_service/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_publisher/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_client/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_guard_conditions/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_executors/lib/python3.10/site-packages:/home/josh_ym_lee/rbe4540-ros/install/josh_rbe_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:'), ('ROS_HOSTNAME', '127.0.0.1'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/josh_ym_lee/ros2_ws/install/rrbot_gazebo:/home/josh_ym_lee/ros2_ws/install/rrbot_description:/home/josh_ym_lee/ros2_ws/install/gazebo_msgs:/home/josh_ym_lee/ros2_ws/install/gazebo_dev:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_wait_set:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_multithreaded_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_timer:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_composition:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_cbg_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_async_client:/home/josh_ym_lee/ros2_ws/install/opencv_test_py:/home/josh_ym_lee/ros2_ws/install/launch_testing_examples:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_guard_conditions:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_executors:/home/josh_ym_lee/rbe4540-ros/install/josh_rbe_package:/opt/ros/humble:/home/josh_ym_lee/catkin_ws/devel')]), 'shell': False}
+[0.401349] (-) TimerEvent: {}
+[0.501746] (-) TimerEvent: {}
+[0.568472] (pcl) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.573085] (vbm_project_env) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.601990] (-) TimerEvent: {}
+[0.702325] (-) TimerEvent: {}
+[0.730603] (pcl) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.732817] (vbm_project_env) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.746757] (pcl) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.746918] (vbm_project_env) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.802424] (-) TimerEvent: {}
+[0.829518] (vbm_project_env) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.833628] (pcl) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.838111] (vbm_project_env) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.838195] (vbm_project_env) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.839865] (vbm_project_env) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.841721] (pcl) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.842201] (pcl) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.842568] (pcl) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.844388] (vbm_project_env) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.846091] (pcl) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.856285] (josh_code) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/josh_code/build', '--no-deps', 'symlink_data'], 'cwd': '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/josh_code', 'env': {'MAIL': '/var/mail/josh_ym_lee', 'USER': 'josh_ym_lee', 'SSH_AGENT_PID': '1604', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/josh_ym_lee/ros2_ws/install/gazebo_msgs/lib:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_wait_set/lib:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_composition/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/josh_ym_lee/catkin_ws/devel/lib', 'HOME': '/home/josh_ym_lee', 'OLDPWD': '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/src', 'ROS_PYTHON_VERSION': '3', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1807', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/humble/', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/josh_ym_lee/install:/home/josh_ym_lee/ros2_ws/install:/home/josh_ym_lee/rbe4540-ros/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'josh_ym_lee', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/josh_ym_lee/catkin_ws/devel/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/home/josh_ym_lee/ros2_ws/install/rrbot_description/share', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '1', 'PATH': '/opt/ros/humble/bin:/home/josh_ym_lee/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/snap/bin', 'SESSION_MANAGER': 'local/joshserver3009:@/tmp/.ICE-unix/1776,unix/joshserver3009:/tmp/.ICE-unix/1776', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/029362d8_dd33_4aea_8231_8a371277c71b', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0.0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'GNOME', 'XMODIFIERS': '@im=ibus', 'XAUTHORITY': '/home/josh_ym_lee/.Xauthority', 'GNOME_TERMINAL_SERVICE': ':1.101', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '30', 'AMENT_PREFIX_PATH': '/home/josh_ym_lee/ros2_ws/install/rrbot_gazebo:/home/josh_ym_lee/ros2_ws/install/rrbot_description:/home/josh_ym_lee/ros2_ws/install/opencv_test_py:/home/josh_ym_lee/ros2_ws/install/launch_testing_examples:/home/josh_ym_lee/ros2_ws/install/gazebo_msgs:/home/josh_ym_lee/ros2_ws/install/gazebo_dev:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_guard_conditions:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_executors:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_wait_set:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_multithreaded_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_timer:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_composition:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_cbg_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_async_client:/home/josh_ym_lee/rbe4540-ros/install/josh_rbe_package:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'ROS_MASTER_URI': 'http://127.0.0.1:11311', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/josh_code', 'TURTLEBOT3_MODEL': 'burger', 'LC_ALL': 'en_US.UTF-8', 'CLUTTER_IM_MODULE': 'ibus', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/josh_code/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/josh_code/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/opencv_test_py/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/gazebo_msgs/local/lib/python3.10/dist-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_service/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_publisher/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_client/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_guard_conditions/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_executors/lib/python3.10/site-packages:/home/josh_ym_lee/rbe4540-ros/install/josh_rbe_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:', 'ROS_HOSTNAME': '127.0.0.1', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/josh_ym_lee/ros2_ws/install/rrbot_gazebo:/home/josh_ym_lee/ros2_ws/install/rrbot_description:/home/josh_ym_lee/ros2_ws/install/gazebo_msgs:/home/josh_ym_lee/ros2_ws/install/gazebo_dev:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_wait_set:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_multithreaded_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_timer:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_composition:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_cbg_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_async_client:/home/josh_ym_lee/catkin_ws/devel'}, 'shell': False}
+[0.902559] (-) TimerEvent: {}
+[0.913925] (vbm_project_env) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.914188] (pcl) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.920256] (vbm_project_env) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.920636] (vbm_project_env) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.920895] (pcl) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.920941] (pcl) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.921096] (vbm_project_env) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.921172] (pcl) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.946312] (vbm_project_env) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.946452] (pcl) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.002699] (-) TimerEvent: {}
+[1.083851] (pcl) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.084394] (vbm_project_env) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.102807] (-) TimerEvent: {}
+[1.111861] (josh_code) StdoutLine: {'line': b'running develop\n'}
+[1.145844] (vbm_project_env) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.145971] (pcl) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.202909] (-) TimerEvent: {}
+[1.208631] (vbm_project_env) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.219970] (josh_code) StdoutLine: {'line': b'running egg_info\n'}
+[1.220065] (josh_code) StdoutLine: {'line': b'creating Josh_Code.egg-info\n'}
+[1.220396] (josh_code) StdoutLine: {'line': b'writing Josh_Code.egg-info/PKG-INFO\n'}
+[1.220609] (josh_code) StdoutLine: {'line': b'writing dependency_links to Josh_Code.egg-info/dependency_links.txt\n'}
+[1.220659] (josh_code) StdoutLine: {'line': b'writing entry points to Josh_Code.egg-info/entry_points.txt\n'}
+[1.220693] (josh_code) StdoutLine: {'line': b'writing requirements to Josh_Code.egg-info/requires.txt\n'}
+[1.221000] (josh_code) StdoutLine: {'line': b'writing top-level names to Josh_Code.egg-info/top_level.txt\n'}
+[1.221082] (josh_code) StdoutLine: {'line': b"writing manifest file 'Josh_Code.egg-info/SOURCES.txt'\n"}
+[1.223255] (josh_code) StdoutLine: {'line': b"reading manifest file 'Josh_Code.egg-info/SOURCES.txt'\n"}
+[1.223828] (josh_code) StdoutLine: {'line': b"writing manifest file 'Josh_Code.egg-info/SOURCES.txt'\n"}
+[1.224250] (pcl) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[1.226506] (josh_code) StdoutLine: {'line': b'running build_ext\n'}
+[1.227154] (josh_code) StdoutLine: {'line': b'Creating /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/josh_code/lib/python3.10/site-packages/Josh-Code.egg-link (link to .)\n'}
+[1.227531] (josh_code) StdoutLine: {'line': b'\n'}
+[1.227596] (josh_code) StdoutLine: {'line': b'Installed /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/josh_code\n'}
+[1.227631] (josh_code) StdoutLine: {'line': b'running symlink_data\n'}
+[1.227663] (josh_code) StdoutLine: {'line': b'symbolically linking /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/josh_code/resource/Josh_Code -> /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/josh_code/share/ament_index/resource_index/packages\n'}
+[1.227716] (josh_code) StdoutLine: {'line': b'creating /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/josh_code/share/Josh_Code\n'}
+[1.227749] (josh_code) StdoutLine: {'line': b'symbolically linking /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/josh_code/package.xml -> /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/josh_code/share/Josh_Code\n'}
+[1.239124] (pcl) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[1.249107] (josh_code) CommandEnded: {'returncode': 0}
+[1.258750] (josh_code) JobEnded: {'identifier': 'josh_code', 'rc': 0}
+[1.262570] (pcl) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[1.262665] (pcl) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.294421] (vbm_project_env) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.295285] (vbm_project_env) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.296348] (vbm_project_env) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.297776] (vbm_project_env) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.299898] (vbm_project_env) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.302964] (vbm_project_env) StdoutLine: {'line': b'-- Generating done\n'}
+[1.303033] (-) TimerEvent: {}
+[1.304383] (vbm_project_env) StdoutLine: {'line': b'-- Build files have been written to: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/vbm_project_env\n'}
+[1.308063] (pcl) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization \n'}
+[1.310025] (vbm_project_env) CommandEnded: {'returncode': 0}
+[1.312469] (vbm_project_env) JobProgress: {'identifier': 'vbm_project_env', 'progress': 'build'}
+[1.312798] (vbm_project_env) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/vbm_project_env', '--', '-j8', '-l8'], 'cwd': '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/vbm_project_env', 'env': OrderedDict([('MAIL', '/var/mail/josh_ym_lee'), ('USER', 'josh_ym_lee'), ('SSH_AGENT_PID', '1604'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/josh_ym_lee/ros2_ws/install/gazebo_msgs/lib:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_wait_set/lib:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_composition/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/josh_ym_lee/catkin_ws/devel/lib'), ('HOME', '/home/josh_ym_lee'), ('OLDPWD', '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1807'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/josh_ym_lee/install:/home/josh_ym_lee/ros2_ws/install:/home/josh_ym_lee/rbe4540-ros/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'josh_ym_lee'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/josh_ym_lee/catkin_ws/devel/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/josh_ym_lee/ros2_ws/install/rrbot_description/share'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/home/josh_ym_lee/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/snap/bin'), ('SESSION_MANAGER', 'local/joshserver3009:@/tmp/.ICE-unix/1776,unix/joshserver3009:/tmp/.ICE-unix/1776'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/029362d8_dd33_4aea_8231_8a371277c71b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'GNOME'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/home/josh_ym_lee/.Xauthority'), ('GNOME_TERMINAL_SERVICE', ':1.101'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/josh_ym_lee/ros2_ws/install/rrbot_gazebo:/home/josh_ym_lee/ros2_ws/install/rrbot_description:/home/josh_ym_lee/ros2_ws/install/opencv_test_py:/home/josh_ym_lee/ros2_ws/install/launch_testing_examples:/home/josh_ym_lee/ros2_ws/install/gazebo_msgs:/home/josh_ym_lee/ros2_ws/install/gazebo_dev:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_guard_conditions:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_executors:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_wait_set:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_multithreaded_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_timer:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_composition:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_cbg_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_async_client:/home/josh_ym_lee/rbe4540-ros/install/josh_rbe_package:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://127.0.0.1:11311'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/vbm_project_env'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('CLUTTER_IM_MODULE', 'ibus'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/josh_ym_lee/ros2_ws/install/opencv_test_py/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/gazebo_msgs/local/lib/python3.10/dist-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_service/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_publisher/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_client/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_guard_conditions/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_executors/lib/python3.10/site-packages:/home/josh_ym_lee/rbe4540-ros/install/josh_rbe_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:'), ('ROS_HOSTNAME', '127.0.0.1'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/josh_ym_lee/ros2_ws/install/rrbot_gazebo:/home/josh_ym_lee/ros2_ws/install/rrbot_description:/home/josh_ym_lee/ros2_ws/install/gazebo_msgs:/home/josh_ym_lee/ros2_ws/install/gazebo_dev:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_wait_set:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_multithreaded_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_timer:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_composition:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_cbg_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_async_client:/home/josh_ym_lee/ros2_ws/install/opencv_test_py:/home/josh_ym_lee/ros2_ws/install/launch_testing_examples:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_guard_conditions:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_executors:/home/josh_ym_lee/rbe4540-ros/install/josh_rbe_package:/opt/ros/humble:/home/josh_ym_lee/catkin_ws/devel')]), 'shell': False}
+[1.342865] (vbm_project_env) CommandEnded: {'returncode': 0}
+[1.343404] (vbm_project_env) JobProgress: {'identifier': 'vbm_project_env', 'progress': 'install'}
+[1.345103] (pcl) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[1.350476] (vbm_project_env) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/vbm_project_env'], 'cwd': '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/vbm_project_env', 'env': OrderedDict([('MAIL', '/var/mail/josh_ym_lee'), ('USER', 'josh_ym_lee'), ('SSH_AGENT_PID', '1604'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/josh_ym_lee/ros2_ws/install/gazebo_msgs/lib:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_wait_set/lib:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_composition/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/josh_ym_lee/catkin_ws/devel/lib'), ('HOME', '/home/josh_ym_lee'), ('OLDPWD', '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1807'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/josh_ym_lee/install:/home/josh_ym_lee/ros2_ws/install:/home/josh_ym_lee/rbe4540-ros/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'josh_ym_lee'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/josh_ym_lee/catkin_ws/devel/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/josh_ym_lee/ros2_ws/install/rrbot_description/share'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/home/josh_ym_lee/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/snap/bin'), ('SESSION_MANAGER', 'local/joshserver3009:@/tmp/.ICE-unix/1776,unix/joshserver3009:/tmp/.ICE-unix/1776'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/029362d8_dd33_4aea_8231_8a371277c71b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'GNOME'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/home/josh_ym_lee/.Xauthority'), ('GNOME_TERMINAL_SERVICE', ':1.101'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/josh_ym_lee/ros2_ws/install/rrbot_gazebo:/home/josh_ym_lee/ros2_ws/install/rrbot_description:/home/josh_ym_lee/ros2_ws/install/opencv_test_py:/home/josh_ym_lee/ros2_ws/install/launch_testing_examples:/home/josh_ym_lee/ros2_ws/install/gazebo_msgs:/home/josh_ym_lee/ros2_ws/install/gazebo_dev:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_guard_conditions:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_executors:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_wait_set:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_multithreaded_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_timer:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_composition:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_cbg_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_async_client:/home/josh_ym_lee/rbe4540-ros/install/josh_rbe_package:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://127.0.0.1:11311'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/vbm_project_env'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('CLUTTER_IM_MODULE', 'ibus'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/josh_ym_lee/ros2_ws/install/opencv_test_py/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/gazebo_msgs/local/lib/python3.10/dist-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_service/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_publisher/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_client/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_guard_conditions/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_executors/lib/python3.10/site-packages:/home/josh_ym_lee/rbe4540-ros/install/josh_rbe_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:'), ('ROS_HOSTNAME', '127.0.0.1'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/josh_ym_lee/ros2_ws/install/rrbot_gazebo:/home/josh_ym_lee/ros2_ws/install/rrbot_description:/home/josh_ym_lee/ros2_ws/install/gazebo_msgs:/home/josh_ym_lee/ros2_ws/install/gazebo_dev:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_wait_set:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_multithreaded_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_timer:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_composition:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_cbg_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_async_client:/home/josh_ym_lee/ros2_ws/install/opencv_test_py:/home/josh_ym_lee/ros2_ws/install/launch_testing_examples:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_guard_conditions:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_executors:/home/josh_ym_lee/rbe4540-ros/install/josh_rbe_package:/opt/ros/humble:/home/josh_ym_lee/catkin_ws/devel')]), 'shell': False}
+[1.354989] (vbm_project_env) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.355537] (vbm_project_env) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.356214] (vbm_project_env) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/vbm_project_env/launch/simulation.launch.py\n'}
+[1.357592] (pcl) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[1.362096] (vbm_project_env) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/vbm_project_env/worlds/simulation.world\n'}
+[1.368055] (vbm_project_env) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/vbm_project_env/urdf/camera.urdf\n'}
+[1.374365] (vbm_project_env) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/ament_index/resource_index/package_run_dependencies/vbm_project_env\n'}
+[1.380367] (vbm_project_env) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/ament_index/resource_index/parent_prefix_path/vbm_project_env\n'}
+[1.385916] (vbm_project_env) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/vbm_project_env/environment/ament_prefix_path.sh\n'}
+[1.391414] (vbm_project_env) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/vbm_project_env/environment/ament_prefix_path.dsv\n'}
+[1.397327] (vbm_project_env) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/vbm_project_env/environment/path.sh\n'}
+[1.397537] (pcl) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/aarch64-linux-gnu/libflann_cpp.so  \n'}
+[1.397614] (pcl) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/aarch64-linux-gnu/libflann_cpp.so)\n'}
+[1.403149] (-) TimerEvent: {}
+[1.403831] (vbm_project_env) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/vbm_project_env/environment/path.dsv\n'}
+[1.409536] (vbm_project_env) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/vbm_project_env/local_setup.bash\n'}
+[1.414627] (vbm_project_env) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/vbm_project_env/local_setup.sh\n'}
+[1.419794] (vbm_project_env) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/vbm_project_env/local_setup.zsh\n'}
+[1.425126] (vbm_project_env) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/vbm_project_env/local_setup.dsv\n'}
+[1.430509] (vbm_project_env) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/vbm_project_env/package.dsv\n'}
+[1.436670] (vbm_project_env) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/ament_index/resource_index/packages/vbm_project_env\n'}
+[1.439917] (pcl) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.443429] (vbm_project_env) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/vbm_project_env/cmake/vbm_project_envConfig.cmake\n'}
+[1.448794] (vbm_project_env) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/vbm_project_env/cmake/vbm_project_envConfig-version.cmake\n'}
+[1.454689] (vbm_project_env) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/vbm_project_env/package.xml\n'}
+[1.463710] (vbm_project_env) CommandEnded: {'returncode': 0}
+[1.473276] (vbm_project_env) JobEnded: {'identifier': 'vbm_project_env', 'rc': 0}
+[1.503285] (-) TimerEvent: {}
+[1.507392] (pcl) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.507606] (pcl) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.564744] (pcl) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.565744] (pcl) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.570518] (pcl) StdoutLine: {'line': b'-- Found GLEW: /usr/lib/aarch64-linux-gnu/libGLEW.so  \n'}
+[1.580275] (pcl) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/aarch64-linux-gnu/libOpenGL.so  found components: OpenGL GLX \n'}
+[1.603394] (-) TimerEvent: {}
+[1.699333] (pcl) StdoutLine: {'line': b'-- Found MPI_C: /usr/lib/aarch64-linux-gnu/libmpi.so (found version "3.1") \n'}
+[1.699624] (pcl) StdoutLine: {'line': b'-- Found MPI: TRUE (found version "3.1") found components: C \n'}
+[1.703750] (pcl) StdoutLine: {'line': b'-- Found JsonCpp: /usr/lib/aarch64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") \n'}
+[1.703836] (-) TimerEvent: {}
+[1.716671] (pcl) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/aarch64-linux-gnu/libz.so (found version "1.2.11") \n'}
+[1.741299] (pcl) StdoutLine: {'line': b'-- Found PNG: /usr/lib/aarch64-linux-gnu/libpng.so (found version "1.6.37") \n'}
+[1.774911] (pcl) StdoutLine: {'line': b'-- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") \n'}
+[1.804628] (-) TimerEvent: {}
+[1.867136] (pcl) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[1.867730] (pcl) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/aarch64-linux-gnu/libX11.so;/usr/lib/aarch64-linux-gnu/libXext.so\n'}
+[1.904753] (-) TimerEvent: {}
+[1.916664] (pcl) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/aarch64-linux-gnu/libX11.so;/usr/lib/aarch64-linux-gnu/libXext.so - found\n'}
+[1.916924] (pcl) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[1.963799] (pcl) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[1.964016] (pcl) StdoutLine: {'line': b'-- Looking for connect\n'}
+[2.005735] (-) TimerEvent: {}
+[2.012727] (pcl) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[2.012837] (pcl) StdoutLine: {'line': b'-- Looking for remove\n'}
+[2.058708] (pcl) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[2.058952] (pcl) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[2.105862] (-) TimerEvent: {}
+[2.107667] (pcl) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[2.107943] (pcl) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[2.164746] (pcl) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[2.206046] (-) TimerEvent: {}
+[2.225813] (pcl) StdoutLine: {'line': b'-- Found EXPAT: /usr/lib/aarch64-linux-gnu/libexpat.so (found version "2.4.7") \n'}
+[2.228480] (pcl) StdoutLine: {'line': b'-- Found double-conversion: /usr/lib/aarch64-linux-gnu/libdouble-conversion.so  \n'}
+[2.232017] (pcl) StdoutLine: {'line': b'-- Found LZ4: /usr/lib/aarch64-linux-gnu/liblz4.so (found version "1.9.3") \n'}
+[2.234905] (pcl) StdoutLine: {'line': b'-- Found LZMA: /usr/lib/aarch64-linux-gnu/liblzma.so (found version "5.2.5") \n'}
+[2.275735] (pcl) StdoutLine: {'line': b'-- Found JPEG: /usr/lib/aarch64-linux-gnu/libjpeg.so (found version "80") \n'}
+[2.281714] (pcl) StdoutLine: {'line': b'-- Found TIFF: /usr/lib/aarch64-linux-gnu/libtiff.so (found version "4.3.0")  \n'}
+[2.288079] (pcl) StdoutLine: {'line': b'-- Found Freetype: /usr/lib/aarch64-linux-gnu/libfreetype.so (found version "2.11.1") \n'}
+[2.295372] (pcl) StdoutLine: {'line': b'-- Found utf8cpp: /usr/include/utf8cpp  \n'}
+[2.306135] (-) TimerEvent: {}
+[2.366787] (pcl) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[2.378461] (pcl) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[2.402438] (pcl) StdoutLine: {'line': b'-- Found libusb: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  \n'}
+[2.403724] (pcl) StdoutLine: {'line': b'-- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") \n'}
+[2.403779] (pcl) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.406237] (-) TimerEvent: {}
+[2.440044] (pcl) StdoutLine: {'line': b'-- Found OpenNI2: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") \n'}
+[2.440182] (pcl) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[2.440268] (pcl) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to pcap will be disabled\x1b[0m\n'}
+[2.509269] (-) TimerEvent: {}
+[2.593611] (pcl) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[2.597995] (pcl) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.602140] (pcl) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[2.610024] (-) TimerEvent: {}
+[2.710244] (-) TimerEvent: {}
+[2.750674] (pcl) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[2.811371] (-) TimerEvent: {}
+[2.898457] (pcl) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.911977] (-) TimerEvent: {}
+[3.012714] (-) TimerEvent: {}
+[3.045706] (pcl) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[3.047930] (pcl) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  \n'}
+[3.048097] (pcl) StdoutLine: {'line': b'-- looking for PCL_KDTREE\n'}
+[3.048863] (pcl) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  \n'}
+[3.048959] (pcl) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[3.050468] (pcl) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  \n'}
+[3.050567] (pcl) StdoutLine: {'line': b'-- looking for PCL_SEARCH\n'}
+[3.051296] (pcl) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  \n'}
+[3.051418] (pcl) StdoutLine: {'line': b'-- looking for PCL_SAMPLE_CONSENSUS\n'}
+[3.052144] (pcl) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[3.052265] (pcl) StdoutLine: {'line': b'-- looking for PCL_FILTERS\n'}
+[3.052988] (pcl) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  \n'}
+[3.053133] (pcl) StdoutLine: {'line': b'-- looking for PCL_2D\n'}
+[3.053937] (pcl) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[3.054088] (pcl) StdoutLine: {'line': b'-- looking for PCL_GEOMETRY\n'}
+[3.054562] (pcl) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[3.054681] (pcl) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[3.055419] (pcl) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/aarch64-linux-gnu/libpcl_io.so  \n'}
+[3.055593] (pcl) StdoutLine: {'line': b'-- looking for PCL_FEATURES\n'}
+[3.056382] (pcl) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/aarch64-linux-gnu/libpcl_features.so  \n'}
+[3.056535] (pcl) StdoutLine: {'line': b'-- looking for PCL_ML\n'}
+[3.057263] (pcl) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/aarch64-linux-gnu/libpcl_ml.so  \n'}
+[3.057451] (pcl) StdoutLine: {'line': b'-- looking for PCL_SEGMENTATION\n'}
+[3.058229] (pcl) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so  \n'}
+[3.058438] (pcl) StdoutLine: {'line': b'-- looking for PCL_VISUALIZATION\n'}
+[3.059243] (pcl) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/aarch64-linux-gnu/libpcl_visualization.so  \n'}
+[3.059428] (pcl) StdoutLine: {'line': b'-- looking for PCL_SURFACE\n'}
+[3.060224] (pcl) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/aarch64-linux-gnu/libpcl_surface.so  \n'}
+[3.060408] (pcl) StdoutLine: {'line': b'-- looking for PCL_REGISTRATION\n'}
+[3.061170] (pcl) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/aarch64-linux-gnu/libpcl_registration.so  \n'}
+[3.061442] (pcl) StdoutLine: {'line': b'-- looking for PCL_KEYPOINTS\n'}
+[3.062210] (pcl) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/aarch64-linux-gnu/libpcl_keypoints.so  \n'}
+[3.062383] (pcl) StdoutLine: {'line': b'-- looking for PCL_TRACKING\n'}
+[3.063164] (pcl) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/aarch64-linux-gnu/libpcl_tracking.so  \n'}
+[3.063329] (pcl) StdoutLine: {'line': b'-- looking for PCL_RECOGNITION\n'}
+[3.064065] (pcl) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/aarch64-linux-gnu/libpcl_recognition.so  \n'}
+[3.064345] (pcl) StdoutLine: {'line': b'-- looking for PCL_STEREO\n'}
+[3.065127] (pcl) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/aarch64-linux-gnu/libpcl_stereo.so  \n'}
+[3.065395] (pcl) StdoutLine: {'line': b'-- looking for PCL_APPS\n'}
+[3.066059] (pcl) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/aarch64-linux-gnu/libpcl_apps.so  \n'}
+[3.066520] (pcl) StdoutLine: {'line': b'-- looking for PCL_IN_HAND_SCANNER\n'}
+[3.066748] (pcl) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[3.066879] (pcl) StdoutLine: {'line': b'-- looking for PCL_MODELER\n'}
+[3.067085] (pcl) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[3.067134] (pcl) StdoutLine: {'line': b'-- looking for PCL_POINT_CLOUD_EDITOR\n'}
+[3.067379] (pcl) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[3.067503] (pcl) StdoutLine: {'line': b'-- looking for PCL_OUTOFCORE\n'}
+[3.068215] (pcl) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/aarch64-linux-gnu/libpcl_outofcore.so  \n'}
+[3.068383] (pcl) StdoutLine: {'line': b'-- looking for PCL_PEOPLE\n'}
+[3.069166] (pcl) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/aarch64-linux-gnu/libpcl_people.so  \n'}
+[3.069886] (pcl) StdoutLine: {'line': b'-- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL  \n'}
+[3.075215] (pcl) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[3.114534] (-) TimerEvent: {}
+[3.141142] (pcl) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[3.150836] (pcl) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.164542] (pcl) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[3.185288] (pcl) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.208301] (pcl) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.214626] (-) TimerEvent: {}
+[3.276442] (pcl) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[3.282433] (pcl) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.315974] (-) TimerEvent: {}
+[3.384915] (pcl) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[3.410228] (pcl) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[3.416557] (-) TimerEvent: {}
+[3.453641] (pcl) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.518090] (-) TimerEvent: {}
+[3.535606] (pcl) StdoutLine: {'line': b'-- Found rclpy: 3.3.17 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[3.539685] (pcl) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[3.577611] (pcl) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[3.611364] (pcl) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[3.618190] (-) TimerEvent: {}
+[3.722904] (-) TimerEvent: {}
+[3.738579] (pcl) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[3.763080] (pcl) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[3.764525] (pcl) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[3.764772] (pcl) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[3.769067] (pcl) StdoutLine: {'line': b'-- Found tf2_py: 0.25.16 (/opt/ros/humble/share/tf2_py/cmake)\n'}
+[3.772231] (pcl) StdoutLine: {'line': b'-- Found tf2_eigen: 0.25.16 (/opt/ros/humble/share/tf2_eigen/cmake)\n'}
+[3.823010] (-) TimerEvent: {}
+[3.872089] (pcl) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.924257] (-) TimerEvent: {}
+[3.951587] (pcl) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[3.953556] (pcl) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[3.955519] (pcl) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/src/pcl/include\n'}
+[3.955629] (pcl) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[3.956292] (pcl) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[3.957010] (pcl) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.957876] (pcl) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[3.958834] (pcl) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[3.958932] (pcl) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[3.959595] (pcl) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.961330] (pcl) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.026157] (-) TimerEvent: {}
+[4.091679] (pcl) StdoutLine: {'line': b'-- Generating done\n'}
+[4.101971] (pcl) StdoutLine: {'line': b'-- Build files have been written to: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/pcl\n'}
+[4.114181] (pcl) CommandEnded: {'returncode': 0}
+[4.116216] (pcl) JobProgress: {'identifier': 'pcl', 'progress': 'build'}
+[4.116255] (pcl) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/pcl', '--', '-j8', '-l8'], 'cwd': '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/pcl', 'env': OrderedDict([('MAIL', '/var/mail/josh_ym_lee'), ('USER', 'josh_ym_lee'), ('SSH_AGENT_PID', '1604'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/josh_ym_lee/ros2_ws/install/gazebo_msgs/lib:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_wait_set/lib:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_composition/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/josh_ym_lee/catkin_ws/devel/lib'), ('HOME', '/home/josh_ym_lee'), ('OLDPWD', '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1807'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/josh_ym_lee/install:/home/josh_ym_lee/ros2_ws/install:/home/josh_ym_lee/rbe4540-ros/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'josh_ym_lee'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/josh_ym_lee/catkin_ws/devel/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/josh_ym_lee/ros2_ws/install/rrbot_description/share'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/home/josh_ym_lee/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/snap/bin'), ('SESSION_MANAGER', 'local/joshserver3009:@/tmp/.ICE-unix/1776,unix/joshserver3009:/tmp/.ICE-unix/1776'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/029362d8_dd33_4aea_8231_8a371277c71b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'GNOME'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/home/josh_ym_lee/.Xauthority'), ('GNOME_TERMINAL_SERVICE', ':1.101'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/josh_ym_lee/ros2_ws/install/rrbot_gazebo:/home/josh_ym_lee/ros2_ws/install/rrbot_description:/home/josh_ym_lee/ros2_ws/install/opencv_test_py:/home/josh_ym_lee/ros2_ws/install/launch_testing_examples:/home/josh_ym_lee/ros2_ws/install/gazebo_msgs:/home/josh_ym_lee/ros2_ws/install/gazebo_dev:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_guard_conditions:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_executors:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_wait_set:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_multithreaded_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_timer:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_composition:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_cbg_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_async_client:/home/josh_ym_lee/rbe4540-ros/install/josh_rbe_package:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://127.0.0.1:11311'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/pcl'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('CLUTTER_IM_MODULE', 'ibus'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/josh_ym_lee/ros2_ws/install/opencv_test_py/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/gazebo_msgs/local/lib/python3.10/dist-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_service/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_publisher/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_client/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_guard_conditions/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_executors/lib/python3.10/site-packages:/home/josh_ym_lee/rbe4540-ros/install/josh_rbe_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:'), ('ROS_HOSTNAME', '127.0.0.1'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/josh_ym_lee/ros2_ws/install/rrbot_gazebo:/home/josh_ym_lee/ros2_ws/install/rrbot_description:/home/josh_ym_lee/ros2_ws/install/gazebo_msgs:/home/josh_ym_lee/ros2_ws/install/gazebo_dev:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_wait_set:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_multithreaded_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_timer:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_composition:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_cbg_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_async_client:/home/josh_ym_lee/ros2_ws/install/opencv_test_py:/home/josh_ym_lee/ros2_ws/install/launch_testing_examples:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_guard_conditions:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_executors:/home/josh_ym_lee/rbe4540-ros/install/josh_rbe_package:/opt/ros/humble:/home/josh_ym_lee/catkin_ws/devel')]), 'shell': False}
+[4.126590] (-) TimerEvent: {}
+[4.161719] (pcl) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/transform_pointcloud.dir/src/transform_pointcloud.cpp.o\x1b[0m\n'}
+[4.162669] (pcl) StdoutLine: {'line': b'[ 50%] Built target ament_cmake_python_symlink_pcl\n'}
+[4.226695] (-) TimerEvent: {}
+[4.326953] (-) TimerEvent: {}
+[4.398779] (pcl) StdoutLine: {'line': b'running egg_info\n'}
+[4.399127] (pcl) StdoutLine: {'line': b'creating pcl.egg-info\n'}
+[4.399272] (pcl) StdoutLine: {'line': b'writing pcl.egg-info/PKG-INFO\n'}
+[4.399448] (pcl) StdoutLine: {'line': b'writing dependency_links to pcl.egg-info/dependency_links.txt\n'}
+[4.399566] (pcl) StdoutLine: {'line': b'writing top-level names to pcl.egg-info/top_level.txt\n'}
+[4.399781] (pcl) StdoutLine: {'line': b"writing manifest file 'pcl.egg-info/SOURCES.txt'\n"}
+[4.401819] (pcl) StdoutLine: {'line': b"reading manifest file 'pcl.egg-info/SOURCES.txt'\n"}
+[4.402091] (pcl) StdoutLine: {'line': b"writing manifest file 'pcl.egg-info/SOURCES.txt'\n"}
+[4.422338] (pcl) StdoutLine: {'line': b'[ 50%] Built target ament_cmake_python_build_pcl_egg\n'}
+[4.427039] (-) TimerEvent: {}
+[4.529295] (-) TimerEvent: {}
+[4.630474] (-) TimerEvent: {}
+[4.733169] (-) TimerEvent: {}
+[4.833599] (-) TimerEvent: {}
+[4.934540] (-) TimerEvent: {}
+[5.034957] (-) TimerEvent: {}
+[5.135278] (-) TimerEvent: {}
+[5.240006] (-) TimerEvent: {}
+[5.344213] (-) TimerEvent: {}
+[5.447110] (-) TimerEvent: {}
+[5.547429] (-) TimerEvent: {}
+[5.648919] (-) TimerEvent: {}
+[5.750529] (-) TimerEvent: {}
+[5.851753] (-) TimerEvent: {}
+[5.953442] (-) TimerEvent: {}
+[6.053752] (-) TimerEvent: {}
+[6.154107] (-) TimerEvent: {}
+[6.254412] (-) TimerEvent: {}
+[6.356585] (-) TimerEvent: {}
+[6.456907] (-) TimerEvent: {}
+[6.558880] (-) TimerEvent: {}
+[6.660946] (-) TimerEvent: {}
+[6.761891] (-) TimerEvent: {}
+[6.864761] (-) TimerEvent: {}
+[6.966966] (-) TimerEvent: {}
+[7.067283] (-) TimerEvent: {}
+[7.171569] (-) TimerEvent: {}
+[7.275520] (-) TimerEvent: {}
+[7.376829] (-) TimerEvent: {}
+[7.477163] (-) TimerEvent: {}
+[7.578237] (-) TimerEvent: {}
+[7.678574] (-) TimerEvent: {}
+[7.779933] (-) TimerEvent: {}
+[7.881448] (-) TimerEvent: {}
+[7.982548] (-) TimerEvent: {}
+[8.085695] (-) TimerEvent: {}
+[8.187159] (-) TimerEvent: {}
+[8.292151] (-) TimerEvent: {}
+[8.395655] (-) TimerEvent: {}
+[8.497985] (-) TimerEvent: {}
+[8.599538] (-) TimerEvent: {}
+[8.699813] (-) TimerEvent: {}
+[8.800219] (-) TimerEvent: {}
+[8.902154] (-) TimerEvent: {}
+[9.003171] (-) TimerEvent: {}
+[9.105834] (-) TimerEvent: {}
+[9.207681] (-) TimerEvent: {}
+[9.312682] (-) TimerEvent: {}
+[9.413694] (-) TimerEvent: {}
+[9.516017] (-) TimerEvent: {}
+[9.617031] (-) TimerEvent: {}
+[9.719046] (-) TimerEvent: {}
+[9.821953] (-) TimerEvent: {}
+[9.922261] (-) TimerEvent: {}
+[10.023573] (-) TimerEvent: {}
+[10.125083] (-) TimerEvent: {}
+[10.226341] (-) TimerEvent: {}
+[10.326626] (-) TimerEvent: {}
+[10.427578] (-) TimerEvent: {}
+[10.529478] (-) TimerEvent: {}
+[10.633671] (-) TimerEvent: {}
+[10.733958] (-) TimerEvent: {}
+[10.836040] (-) TimerEvent: {}
+[10.936892] (-) TimerEvent: {}
+[11.039920] (-) TimerEvent: {}
+[11.141752] (-) TimerEvent: {}
+[11.242017] (-) TimerEvent: {}
+[11.343606] (-) TimerEvent: {}
+[11.444152] (-) TimerEvent: {}
+[11.546198] (-) TimerEvent: {}
+[11.648082] (-) TimerEvent: {}
+[11.752941] (-) TimerEvent: {}
+[11.854706] (-) TimerEvent: {}
+[11.956623] (-) TimerEvent: {}
+[12.057838] (-) TimerEvent: {}
+[12.159367] (-) TimerEvent: {}
+[12.259644] (-) TimerEvent: {}
+[12.359989] (-) TimerEvent: {}
+[12.461760] (-) TimerEvent: {}
+[12.564665] (-) TimerEvent: {}
+[12.667983] (-) TimerEvent: {}
+[12.772286] (-) TimerEvent: {}
+[12.877772] (-) TimerEvent: {}
+[12.982576] (-) TimerEvent: {}
+[13.083457] (-) TimerEvent: {}
+[13.186142] (-) TimerEvent: {}
+[13.290893] (-) TimerEvent: {}
+[13.391231] (-) TimerEvent: {}
+[13.493760] (-) TimerEvent: {}
+[13.595072] (-) TimerEvent: {}
+[13.702318] (-) TimerEvent: {}
+[13.804019] (-) TimerEvent: {}
+[13.906874] (-) TimerEvent: {}
+[14.011682] (-) TimerEvent: {}
+[14.112792] (-) TimerEvent: {}
+[14.213999] (-) TimerEvent: {}
+[14.314949] (-) TimerEvent: {}
+[14.415874] (-) TimerEvent: {}
+[14.518104] (-) TimerEvent: {}
+[14.619554] (-) TimerEvent: {}
+[14.720001] (-) TimerEvent: {}
+[14.821288] (-) TimerEvent: {}
+[14.924243] (-) TimerEvent: {}
+[15.024607] (-) TimerEvent: {}
+[15.128405] (-) TimerEvent: {}
+[15.228720] (-) TimerEvent: {}
+[15.329355] (-) TimerEvent: {}
+[15.433655] (-) TimerEvent: {}
+[15.534006] (-) TimerEvent: {}
+[15.636467] (-) TimerEvent: {}
+[15.737343] (-) TimerEvent: {}
+[15.839035] (-) TimerEvent: {}
+[15.942961] (-) TimerEvent: {}
+[16.043279] (-) TimerEvent: {}
+[16.143696] (-) TimerEvent: {}
+[16.244044] (-) TimerEvent: {}
+[16.346459] (-) TimerEvent: {}
+[16.456495] (-) TimerEvent: {}
+[16.559393] (-) TimerEvent: {}
+[16.664149] (-) TimerEvent: {}
+[16.765461] (-) TimerEvent: {}
+[16.866537] (-) TimerEvent: {}
+[16.969964] (-) TimerEvent: {}
+[17.074249] (-) TimerEvent: {}
+[17.179406] (-) TimerEvent: {}
+[17.279906] (-) TimerEvent: {}
+[17.380595] (-) TimerEvent: {}
+[17.481252] (-) TimerEvent: {}
+[17.583636] (-) TimerEvent: {}
+[17.683963] (-) TimerEvent: {}
+[17.785699] (-) TimerEvent: {}
+[17.887584] (-) TimerEvent: {}
+[17.988029] (-) TimerEvent: {}
+[18.090457] (-) TimerEvent: {}
+[18.191312] (-) TimerEvent: {}
+[18.291755] (-) TimerEvent: {}
+[18.395317] (-) TimerEvent: {}
+[18.496646] (-) TimerEvent: {}
+[18.597019] (-) TimerEvent: {}
+[18.697479] (-) TimerEvent: {}
+[18.799358] (-) TimerEvent: {}
+[18.902432] (-) TimerEvent: {}
+[19.003509] (-) TimerEvent: {}
+[19.104257] (-) TimerEvent: {}
+[19.205634] (-) TimerEvent: {}
+[19.305956] (-) TimerEvent: {}
+[19.371571] (pcl) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable transform_pointcloud\x1b[0m\n'}
+[19.406097] (-) TimerEvent: {}
+[19.506438] (-) TimerEvent: {}
+[19.611376] (-) TimerEvent: {}
+[19.715572] (-) TimerEvent: {}
+[19.817991] (-) TimerEvent: {}
+[19.918448] (-) TimerEvent: {}
+[20.021376] (-) TimerEvent: {}
+[20.121849] (-) TimerEvent: {}
+[20.224049] (-) TimerEvent: {}
+[20.325436] (-) TimerEvent: {}
+[20.426381] (-) TimerEvent: {}
+[20.528603] (-) TimerEvent: {}
+[20.629635] (-) TimerEvent: {}
+[20.730873] (-) TimerEvent: {}
+[20.803969] (pcl) StdoutLine: {'line': b'[100%] Built target transform_pointcloud\n'}
+[20.830992] (-) TimerEvent: {}
+[20.933106] (pcl) CommandEnded: {'returncode': 0}
+[20.975927] (-) TimerEvent: {}
+[20.986665] (pcl) JobProgress: {'identifier': 'pcl', 'progress': 'install'}
+[21.006931] (pcl) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/pcl'], 'cwd': '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/pcl', 'env': OrderedDict([('MAIL', '/var/mail/josh_ym_lee'), ('USER', 'josh_ym_lee'), ('SSH_AGENT_PID', '1604'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/josh_ym_lee/ros2_ws/install/gazebo_msgs/lib:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_wait_set/lib:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_composition/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/josh_ym_lee/catkin_ws/devel/lib'), ('HOME', '/home/josh_ym_lee'), ('OLDPWD', '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1807'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/josh_ym_lee/install:/home/josh_ym_lee/ros2_ws/install:/home/josh_ym_lee/rbe4540-ros/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'josh_ym_lee'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/josh_ym_lee/catkin_ws/devel/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/josh_ym_lee/ros2_ws/install/rrbot_description/share'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/home/josh_ym_lee/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/snap/bin'), ('SESSION_MANAGER', 'local/joshserver3009:@/tmp/.ICE-unix/1776,unix/joshserver3009:/tmp/.ICE-unix/1776'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/029362d8_dd33_4aea_8231_8a371277c71b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'GNOME'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/home/josh_ym_lee/.Xauthority'), ('GNOME_TERMINAL_SERVICE', ':1.101'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/josh_ym_lee/ros2_ws/install/rrbot_gazebo:/home/josh_ym_lee/ros2_ws/install/rrbot_description:/home/josh_ym_lee/ros2_ws/install/opencv_test_py:/home/josh_ym_lee/ros2_ws/install/launch_testing_examples:/home/josh_ym_lee/ros2_ws/install/gazebo_msgs:/home/josh_ym_lee/ros2_ws/install/gazebo_dev:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_guard_conditions:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_executors:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_wait_set:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_multithreaded_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_timer:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_composition:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_cbg_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_async_client:/home/josh_ym_lee/rbe4540-ros/install/josh_rbe_package:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://127.0.0.1:11311'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/pcl'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('CLUTTER_IM_MODULE', 'ibus'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/josh_ym_lee/ros2_ws/install/opencv_test_py/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/gazebo_msgs/local/lib/python3.10/dist-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_service/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_publisher/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_client/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_guard_conditions/lib/python3.10/site-packages:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_executors/lib/python3.10/site-packages:/home/josh_ym_lee/rbe4540-ros/install/josh_rbe_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:'), ('ROS_HOSTNAME', '127.0.0.1'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/josh_ym_lee/ros2_ws/install/rrbot_gazebo:/home/josh_ym_lee/ros2_ws/install/rrbot_description:/home/josh_ym_lee/ros2_ws/install/gazebo_msgs:/home/josh_ym_lee/ros2_ws/install/gazebo_dev:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_wait_set:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_multithreaded_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_timer:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_composition:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_cbg_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_async_client:/home/josh_ym_lee/ros2_ws/install/opencv_test_py:/home/josh_ym_lee/ros2_ws/install/launch_testing_examples:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_guard_conditions:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_executors:/home/josh_ym_lee/rbe4540-ros/install/josh_rbe_package:/opt/ros/humble:/home/josh_ym_lee/catkin_ws/devel')]), 'shell': False}
+[21.026197] (pcl) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[21.026483] (pcl) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[21.027516] (pcl) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/lib/pcl/transform_pointcloud\n'}
+[21.034360] (pcl) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/environment/pythonpath.sh\n'}
+[21.039738] (pcl) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/environment/pythonpath.dsv\n'}
+[21.046319] (pcl) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/local/lib/python3.10/dist-packages/pcl-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[21.051793] (pcl) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/local/lib/python3.10/dist-packages/pcl-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[21.057023] (pcl) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/local/lib/python3.10/dist-packages/pcl-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[21.061923] (pcl) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/local/lib/python3.10/dist-packages/pcl-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[21.069009] (pcl) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/local/lib/python3.10/dist-packages/pcl/__init__.py\n'}
+[21.075360] (pcl) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/ament_index/resource_index/package_run_dependencies/pcl\n'}
+[21.076271] (-) TimerEvent: {}
+[21.083726] (pcl) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/ament_index/resource_index/parent_prefix_path/pcl\n'}
+[21.091392] (pcl) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/environment/ament_prefix_path.sh\n'}
+[21.098607] (pcl) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/environment/ament_prefix_path.dsv\n'}
+[21.104731] (pcl) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/environment/path.sh\n'}
+[21.111375] (pcl) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/environment/path.dsv\n'}
+[21.118412] (pcl) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/local_setup.bash\n'}
+[21.123240] (pcl) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/local_setup.sh\n'}
+[21.130062] (pcl) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/local_setup.zsh\n'}
+[21.135478] (pcl) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/local_setup.dsv\n'}
+[21.141699] (pcl) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/package.dsv\n'}
+[21.148283] (pcl) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/ament_index/resource_index/packages/pcl\n'}
+[21.153908] (pcl) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/cmake/pclConfig.cmake\n'}
+[21.159769] (pcl) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/cmake/pclConfig-version.cmake\n'}
+[21.165096] (pcl) StdoutLine: {'line': b'-- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/package.xml\n'}
+[21.177550] (-) TimerEvent: {}
+[21.238744] (pcl) StdoutLine: {'line': b"Listing '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/local/lib/python3.10/dist-packages/pcl'...\n"}
+[21.238873] (pcl) StdoutLine: {'line': b"Compiling '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/local/lib/python3.10/dist-packages/pcl/__init__.py'...\n"}
+[21.252777] (pcl) CommandEnded: {'returncode': 0}
+[21.283985] (-) TimerEvent: {}
+[21.339853] (pcl) JobEnded: {'identifier': 'pcl', 'rc': 0}
+[21.350885] (-) EventReactorShutdown: {}

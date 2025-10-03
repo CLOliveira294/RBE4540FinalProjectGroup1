@@ -1,8 +1,8 @@
-# Install script for directory: /home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/src/pcl
+# Install script for directory: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/src/pcl
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/install/pcl")
+  set(CMAKE_INSTALL_PREFIX "/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,106 +43,15 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pcl/transform_pointcloud" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pcl/transform_pointcloud")
-    file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pcl/transform_pointcloud"
-         RPATH "")
-  endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pcl" TYPE EXECUTABLE FILES "/home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/build/pcl/transform_pointcloud")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pcl/transform_pointcloud" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pcl/transform_pointcloud")
-    file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pcl/transform_pointcloud"
-         OLD_RPATH "/opt/ros/humble/lib:"
-         NEW_RPATH "")
-    if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pcl/transform_pointcloud")
-    endif()
-  endif()
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pcl/environment" TYPE FILE FILES "/home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/build/pcl/ament_cmake_environment_hooks/pythonpath.sh")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pcl/environment" TYPE FILE FILES "/home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/build/pcl/ament_cmake_environment_hooks/pythonpath.dsv")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/pcl-0.0.0-py3.10.egg-info" TYPE DIRECTORY FILES "/home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/build/pcl/ament_cmake_python/pcl/pcl.egg-info/")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/pcl" TYPE DIRECTORY FILES "/home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/src/pcl/pcl/" REGEX "/[^/]*\\.pyc$" EXCLUDE REGEX "/\\_\\_pycache\\_\\_$" EXCLUDE)
+  include("/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/pcl/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   execute_process(
         COMMAND
         "/usr/bin/python3" "-m" "compileall"
-        "/home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/install/pcl/local/lib/python3.10/dist-packages/pcl"
+        "/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/local/lib/python3.10/dist-packages/pcl"
       )
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/build/pcl/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/pcl")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/build/pcl/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/pcl")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pcl/environment" TYPE FILE FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pcl/environment" TYPE FILE FILES "/home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/build/pcl/ament_cmake_environment_hooks/ament_prefix_path.dsv")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pcl/environment" TYPE FILE FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pcl/environment" TYPE FILE FILES "/home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/build/pcl/ament_cmake_environment_hooks/path.dsv")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pcl" TYPE FILE FILES "/home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/build/pcl/ament_cmake_environment_hooks/local_setup.bash")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pcl" TYPE FILE FILES "/home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/build/pcl/ament_cmake_environment_hooks/local_setup.sh")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pcl" TYPE FILE FILES "/home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/build/pcl/ament_cmake_environment_hooks/local_setup.zsh")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pcl" TYPE FILE FILES "/home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/build/pcl/ament_cmake_environment_hooks/local_setup.dsv")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pcl" TYPE FILE FILES "/home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/build/pcl/ament_cmake_environment_hooks/package.dsv")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/build/pcl/ament_cmake_index/share/ament_index/resource_index/packages/pcl")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pcl/cmake" TYPE FILE FILES
-    "/home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/build/pcl/ament_cmake_core/pclConfig.cmake"
-    "/home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/build/pcl/ament_cmake_core/pclConfig-version.cmake"
-    )
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pcl" TYPE FILE FILES "/home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/src/pcl/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -153,5 +62,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/build/pcl/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/pcl/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

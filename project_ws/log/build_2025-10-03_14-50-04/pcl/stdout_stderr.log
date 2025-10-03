@@ -1,4 +1,0 @@
-[0mCMake Error: The current CMakeCache.txt directory /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/pcl/CMakeCache.txt is different than the directory /home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/build/pcl where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
-[0mCMake Error: The source directory "/home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/src/pcl" does not exist.
-Specify --help for usage, or press the help button on the CMake GUI.[0m
-gmake: *** [Makefile:295: cmake_check_build_system] Error 1

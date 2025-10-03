@@ -1,0 +1,203 @@
+[0.328s] Invoking command in '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/pcl': CMAKE_PREFIX_PATH=/home/josh_ym_lee/ros2_ws/install/rrbot_gazebo:/home/josh_ym_lee/ros2_ws/install/rrbot_description:/home/josh_ym_lee/ros2_ws/install/gazebo_msgs:/home/josh_ym_lee/ros2_ws/install/gazebo_dev:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_wait_set:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_multithreaded_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_timer:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_composition:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_cbg_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_async_client:/home/josh_ym_lee/ros2_ws/install/opencv_test_py:/home/josh_ym_lee/ros2_ws/install/launch_testing_examples:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_guard_conditions:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_executors:/home/josh_ym_lee/rbe4540-ros/install/josh_rbe_package:/opt/ros/humble:/home/josh_ym_lee/catkin_ws/devel /usr/bin/cmake /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/src/pcl -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl
+[0.559s] -- The C compiler identification is GNU 11.4.0
+[0.721s] -- The CXX compiler identification is GNU 11.4.0
+[0.737s] -- Detecting C compiler ABI info
+[0.824s] -- Detecting C compiler ABI info - done
+[0.832s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.832s] -- Detecting C compile features
+[0.833s] -- Detecting C compile features - done
+[0.836s] -- Detecting CXX compiler ABI info
+[0.904s] -- Detecting CXX compiler ABI info - done
+[0.911s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.911s] -- Detecting CXX compile features
+[0.912s] -- Detecting CXX compile features - done
+[0.937s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.074s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.136s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.214s] -- Checking for module 'eigen3'
+[1.229s] --   Found eigen3, version 3.4.0
+[1.253s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[1.253s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.298s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization 
+[1.335s] -- Checking for module 'flann'
+[1.348s] --   Found flann, version 1.9.1
+[1.388s] -- Found FLANN: /usr/lib/aarch64-linux-gnu/libflann_cpp.so  
+[1.388s] -- FLANN found (include: /usr/include, lib: /usr/lib/aarch64-linux-gnu/libflann_cpp.so)
+[1.430s] -- Looking for pthread.h
+[1.498s] -- Looking for pthread.h - found
+[1.498s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.555s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.556s] -- Found Threads: TRUE  
+[1.561s] -- Found GLEW: /usr/lib/aarch64-linux-gnu/libGLEW.so  
+[1.570s] -- Found OpenGL: /usr/lib/aarch64-linux-gnu/libOpenGL.so  found components: OpenGL GLX 
+[1.690s] -- Found MPI_C: /usr/lib/aarch64-linux-gnu/libmpi.so (found version "3.1") 
+[1.690s] -- Found MPI: TRUE (found version "3.1") found components: C 
+[1.694s] -- Found JsonCpp: /usr/lib/aarch64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") 
+[1.707s] -- Found ZLIB: /usr/lib/aarch64-linux-gnu/libz.so (found version "1.2.11") 
+[1.731s] -- Found PNG: /usr/lib/aarch64-linux-gnu/libpng.so (found version "1.6.37") 
+[1.765s] -- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") 
+[1.857s] -- Found X11: /usr/include   
+[1.858s] -- Looking for XOpenDisplay in /usr/lib/aarch64-linux-gnu/libX11.so;/usr/lib/aarch64-linux-gnu/libXext.so
+[1.907s] -- Looking for XOpenDisplay in /usr/lib/aarch64-linux-gnu/libX11.so;/usr/lib/aarch64-linux-gnu/libXext.so - found
+[1.907s] -- Looking for gethostbyname
+[1.954s] -- Looking for gethostbyname - found
+[1.954s] -- Looking for connect
+[2.003s] -- Looking for connect - found
+[2.003s] -- Looking for remove
+[2.049s] -- Looking for remove - found
+[2.049s] -- Looking for shmat
+[2.098s] -- Looking for shmat - found
+[2.098s] -- Looking for IceConnectionNumber in ICE
+[2.155s] -- Looking for IceConnectionNumber in ICE - found
+[2.216s] -- Found EXPAT: /usr/lib/aarch64-linux-gnu/libexpat.so (found version "2.4.7") 
+[2.219s] -- Found double-conversion: /usr/lib/aarch64-linux-gnu/libdouble-conversion.so  
+[2.222s] -- Found LZ4: /usr/lib/aarch64-linux-gnu/liblz4.so (found version "1.9.3") 
+[2.225s] -- Found LZMA: /usr/lib/aarch64-linux-gnu/liblzma.so (found version "5.2.5") 
+[2.266s] -- Found JPEG: /usr/lib/aarch64-linux-gnu/libjpeg.so (found version "80") 
+[2.272s] -- Found TIFF: /usr/lib/aarch64-linux-gnu/libtiff.so (found version "4.3.0")  
+[2.278s] -- Found Freetype: /usr/lib/aarch64-linux-gnu/libfreetype.so (found version "2.11.1") 
+[2.286s] -- Found utf8cpp: /usr/include/utf8cpp  
+[2.357s] -- Checking for module 'libusb-1.0'
+[2.369s] --   Found libusb-1.0, version 1.0.25
+[2.393s] -- Found libusb: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  
+[2.394s] -- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") 
+[2.394s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.430s] -- Found OpenNI2: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") 
+[2.430s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.430s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[2.584s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.588s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.592s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.741s] -- Found Qhull version 8.0.2
+[2.889s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.036s] -- looking for PCL_COMMON
+[3.038s] -- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  
+[3.038s] -- looking for PCL_KDTREE
+[3.039s] -- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  
+[3.039s] -- looking for PCL_OCTREE
+[3.041s] -- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  
+[3.041s] -- looking for PCL_SEARCH
+[3.041s] -- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  
+[3.042s] -- looking for PCL_SAMPLE_CONSENSUS
+[3.042s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  
+[3.042s] -- looking for PCL_FILTERS
+[3.043s] -- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  
+[3.043s] -- looking for PCL_2D
+[3.044s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[3.044s] -- looking for PCL_GEOMETRY
+[3.045s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[3.045s] -- looking for PCL_IO
+[3.046s] -- Found PCL_IO: /usr/lib/aarch64-linux-gnu/libpcl_io.so  
+[3.046s] -- looking for PCL_FEATURES
+[3.047s] -- Found PCL_FEATURES: /usr/lib/aarch64-linux-gnu/libpcl_features.so  
+[3.047s] -- looking for PCL_ML
+[3.047s] -- Found PCL_ML: /usr/lib/aarch64-linux-gnu/libpcl_ml.so  
+[3.048s] -- looking for PCL_SEGMENTATION
+[3.048s] -- Found PCL_SEGMENTATION: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so  
+[3.049s] -- looking for PCL_VISUALIZATION
+[3.049s] -- Found PCL_VISUALIZATION: /usr/lib/aarch64-linux-gnu/libpcl_visualization.so  
+[3.050s] -- looking for PCL_SURFACE
+[3.050s] -- Found PCL_SURFACE: /usr/lib/aarch64-linux-gnu/libpcl_surface.so  
+[3.051s] -- looking for PCL_REGISTRATION
+[3.051s] -- Found PCL_REGISTRATION: /usr/lib/aarch64-linux-gnu/libpcl_registration.so  
+[3.052s] -- looking for PCL_KEYPOINTS
+[3.052s] -- Found PCL_KEYPOINTS: /usr/lib/aarch64-linux-gnu/libpcl_keypoints.so  
+[3.053s] -- looking for PCL_TRACKING
+[3.053s] -- Found PCL_TRACKING: /usr/lib/aarch64-linux-gnu/libpcl_tracking.so  
+[3.053s] -- looking for PCL_RECOGNITION
+[3.054s] -- Found PCL_RECOGNITION: /usr/lib/aarch64-linux-gnu/libpcl_recognition.so  
+[3.054s] -- looking for PCL_STEREO
+[3.055s] -- Found PCL_STEREO: /usr/lib/aarch64-linux-gnu/libpcl_stereo.so  
+[3.056s] -- looking for PCL_APPS
+[3.056s] -- Found PCL_APPS: /usr/lib/aarch64-linux-gnu/libpcl_apps.so  
+[3.057s] -- looking for PCL_IN_HAND_SCANNER
+[3.057s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[3.057s] -- looking for PCL_MODELER
+[3.057s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[3.057s] -- looking for PCL_POINT_CLOUD_EDITOR
+[3.058s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[3.058s] -- looking for PCL_OUTOFCORE
+[3.058s] -- Found PCL_OUTOFCORE: /usr/lib/aarch64-linux-gnu/libpcl_outofcore.so  
+[3.059s] -- looking for PCL_PEOPLE
+[3.059s] -- Found PCL_PEOPLE: /usr/lib/aarch64-linux-gnu/libpcl_people.so  
+[3.060s] -- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL  
+[3.065s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[3.131s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.141s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.155s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.175s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.198s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.267s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.273s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.375s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.400s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.444s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.526s] -- Found rclpy: 3.3.17 (/opt/ros/humble/share/rclpy/cmake)
+[3.530s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[3.568s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[3.602s] -- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+[3.729s] -- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[3.753s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[3.755s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[3.755s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[3.759s] -- Found tf2_py: 0.25.16 (/opt/ros/humble/share/tf2_py/cmake)
+[3.762s] -- Found tf2_eigen: 0.25.16 (/opt/ros/humble/share/tf2_eigen/cmake)
+[3.862s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.942s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.944s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.946s] -- Configured cppcheck include dirs: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/src/pcl/include
+[3.946s] -- Configured cppcheck exclude dirs and/or files: 
+[3.946s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.947s] -- Added test 'lint_cmake' to check CMake code style
+[3.948s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.949s] -- Added test 'uncrustify' to check C / C++ code style
+[3.949s] -- Configured uncrustify additional arguments: 
+[3.950s] -- Added test 'xmllint' to check XML markup files
+[3.951s] -- Configuring done
+[4.082s] -- Generating done
+[4.092s] -- Build files have been written to: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/pcl
+[4.105s] Invoked command in '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/pcl' returned '0': CMAKE_PREFIX_PATH=/home/josh_ym_lee/ros2_ws/install/rrbot_gazebo:/home/josh_ym_lee/ros2_ws/install/rrbot_description:/home/josh_ym_lee/ros2_ws/install/gazebo_msgs:/home/josh_ym_lee/ros2_ws/install/gazebo_dev:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_wait_set:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_multithreaded_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_timer:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_composition:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_cbg_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_async_client:/home/josh_ym_lee/ros2_ws/install/opencv_test_py:/home/josh_ym_lee/ros2_ws/install/launch_testing_examples:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_guard_conditions:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_executors:/home/josh_ym_lee/rbe4540-ros/install/josh_rbe_package:/opt/ros/humble:/home/josh_ym_lee/catkin_ws/devel /usr/bin/cmake /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/src/pcl -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl
+[4.107s] Invoking command in '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/pcl': CMAKE_PREFIX_PATH=/home/josh_ym_lee/ros2_ws/install/rrbot_gazebo:/home/josh_ym_lee/ros2_ws/install/rrbot_description:/home/josh_ym_lee/ros2_ws/install/gazebo_msgs:/home/josh_ym_lee/ros2_ws/install/gazebo_dev:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_wait_set:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_multithreaded_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_timer:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_composition:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_cbg_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_async_client:/home/josh_ym_lee/ros2_ws/install/opencv_test_py:/home/josh_ym_lee/ros2_ws/install/launch_testing_examples:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_guard_conditions:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_executors:/home/josh_ym_lee/rbe4540-ros/install/josh_rbe_package:/opt/ros/humble:/home/josh_ym_lee/catkin_ws/devel /usr/bin/cmake --build /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/pcl -- -j8 -l8
+[4.152s] [ 50%] [32mBuilding CXX object CMakeFiles/transform_pointcloud.dir/src/transform_pointcloud.cpp.o[0m
+[4.153s] [ 50%] Built target ament_cmake_python_symlink_pcl
+[4.389s] running egg_info
+[4.389s] creating pcl.egg-info
+[4.389s] writing pcl.egg-info/PKG-INFO
+[4.390s] writing dependency_links to pcl.egg-info/dependency_links.txt
+[4.390s] writing top-level names to pcl.egg-info/top_level.txt
+[4.390s] writing manifest file 'pcl.egg-info/SOURCES.txt'
+[4.392s] reading manifest file 'pcl.egg-info/SOURCES.txt'
+[4.392s] writing manifest file 'pcl.egg-info/SOURCES.txt'
+[4.413s] [ 50%] Built target ament_cmake_python_build_pcl_egg
+[19.379s] [100%] [32m[1mLinking CXX executable transform_pointcloud[0m
+[20.794s] [100%] Built target transform_pointcloud
+[20.932s] Invoked command in '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/pcl' returned '0': CMAKE_PREFIX_PATH=/home/josh_ym_lee/ros2_ws/install/rrbot_gazebo:/home/josh_ym_lee/ros2_ws/install/rrbot_description:/home/josh_ym_lee/ros2_ws/install/gazebo_msgs:/home/josh_ym_lee/ros2_ws/install/gazebo_dev:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_wait_set:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_multithreaded_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_timer:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_composition:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_cbg_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_async_client:/home/josh_ym_lee/ros2_ws/install/opencv_test_py:/home/josh_ym_lee/ros2_ws/install/launch_testing_examples:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_guard_conditions:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_executors:/home/josh_ym_lee/rbe4540-ros/install/josh_rbe_package:/opt/ros/humble:/home/josh_ym_lee/catkin_ws/devel /usr/bin/cmake --build /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/pcl -- -j8 -l8
+[21.000s] Invoking command in '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/pcl': CMAKE_PREFIX_PATH=/home/josh_ym_lee/ros2_ws/install/rrbot_gazebo:/home/josh_ym_lee/ros2_ws/install/rrbot_description:/home/josh_ym_lee/ros2_ws/install/gazebo_msgs:/home/josh_ym_lee/ros2_ws/install/gazebo_dev:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_wait_set:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_multithreaded_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_timer:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_composition:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_cbg_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_async_client:/home/josh_ym_lee/ros2_ws/install/opencv_test_py:/home/josh_ym_lee/ros2_ws/install/launch_testing_examples:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_guard_conditions:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_executors:/home/josh_ym_lee/rbe4540-ros/install/josh_rbe_package:/opt/ros/humble:/home/josh_ym_lee/catkin_ws/devel /usr/bin/cmake --install /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/pcl
+[21.016s] -- Install configuration: ""
+[21.017s] -- Execute custom install script
+[21.018s] -- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/lib/pcl/transform_pointcloud
+[21.025s] -- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/environment/pythonpath.sh
+[21.030s] -- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/environment/pythonpath.dsv
+[21.037s] -- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/local/lib/python3.10/dist-packages/pcl-0.0.0-py3.10.egg-info/PKG-INFO
+[21.043s] -- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/local/lib/python3.10/dist-packages/pcl-0.0.0-py3.10.egg-info/SOURCES.txt
+[21.047s] -- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/local/lib/python3.10/dist-packages/pcl-0.0.0-py3.10.egg-info/dependency_links.txt
+[21.052s] -- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/local/lib/python3.10/dist-packages/pcl-0.0.0-py3.10.egg-info/top_level.txt
+[21.059s] -- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/local/lib/python3.10/dist-packages/pcl/__init__.py
+[21.066s] -- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/ament_index/resource_index/package_run_dependencies/pcl
+[21.074s] -- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/ament_index/resource_index/parent_prefix_path/pcl
+[21.082s] -- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/environment/ament_prefix_path.sh
+[21.089s] -- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/environment/ament_prefix_path.dsv
+[21.095s] -- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/environment/path.sh
+[21.102s] -- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/environment/path.dsv
+[21.109s] -- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/local_setup.bash
+[21.113s] -- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/local_setup.sh
+[21.120s] -- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/local_setup.zsh
+[21.126s] -- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/local_setup.dsv
+[21.132s] -- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/package.dsv
+[21.138s] -- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/ament_index/resource_index/packages/pcl
+[21.144s] -- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/cmake/pclConfig.cmake
+[21.150s] -- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/cmake/pclConfig-version.cmake
+[21.155s] -- Symlinking: /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/package.xml
+[21.229s] Listing '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/local/lib/python3.10/dist-packages/pcl'...
+[21.229s] Compiling '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/install/pcl/local/lib/python3.10/dist-packages/pcl/__init__.py'...
+[21.243s] Invoked command in '/home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/pcl' returned '0': CMAKE_PREFIX_PATH=/home/josh_ym_lee/ros2_ws/install/rrbot_gazebo:/home/josh_ym_lee/ros2_ws/install/rrbot_description:/home/josh_ym_lee/ros2_ws/install/gazebo_msgs:/home/josh_ym_lee/ros2_ws/install/gazebo_dev:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_wait_set:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_multithreaded_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_timer:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_composition:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_cbg_executor:/home/josh_ym_lee/ros2_ws/install/examples_rclcpp_async_client:/home/josh_ym_lee/ros2_ws/install/opencv_test_py:/home/josh_ym_lee/ros2_ws/install/launch_testing_examples:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_service:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_publisher:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_client:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_server:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_minimal_action_client:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_guard_conditions:/home/josh_ym_lee/ros2_ws/install/examples_rclpy_executors:/home/josh_ym_lee/rbe4540-ros/install/josh_rbe_package:/opt/ros/humble:/home/josh_ym_lee/catkin_ws/devel /usr/bin/cmake --install /home/josh_ym_lee/RBE4540FinalProjectGroup1/project_ws/build/pcl

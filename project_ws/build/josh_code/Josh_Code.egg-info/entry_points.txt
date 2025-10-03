@@ -1,0 +1,3 @@
+[console_scripts]
+grasp_matrix_node = josh_code.grasp_matrix_node:main
+
