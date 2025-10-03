@@ -1,0 +1,41 @@
+[0.010s] Invoking command in '/home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/build/pcl': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cloliveira/HW4/gazebotest_ws/install/rrbot_gazebo:/home/cloliveira/HW4/gazebotest_ws/install/rrbot_description:/home/cloliveira/HW4/gazebotest_ws/install/opencv_test_py:/home/cloliveira/rbe450x-ros/install/my_package:/opt/ros/humble /usr/bin/cmake --build /home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/build/pcl -- -j20 -l20
+[0.051s] [35m[1mConsolidate compiler generated dependencies of target transform_pointcloud[0m
+[0.067s] [  0%] Built target ament_cmake_python_copy_pcl
+[0.074s] [100%] Built target transform_pointcloud
+[0.237s] running egg_info
+[0.238s] writing pcl.egg-info/PKG-INFO
+[0.238s] writing dependency_links to pcl.egg-info/dependency_links.txt
+[0.238s] writing top-level names to pcl.egg-info/top_level.txt
+[0.240s] reading manifest file 'pcl.egg-info/SOURCES.txt'
+[0.240s] writing manifest file 'pcl.egg-info/SOURCES.txt'
+[0.260s] [100%] Built target ament_cmake_python_build_pcl_egg
+[0.269s] Invoked command in '/home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/build/pcl' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cloliveira/HW4/gazebotest_ws/install/rrbot_gazebo:/home/cloliveira/HW4/gazebotest_ws/install/rrbot_description:/home/cloliveira/HW4/gazebotest_ws/install/opencv_test_py:/home/cloliveira/rbe450x-ros/install/my_package:/opt/ros/humble /usr/bin/cmake --build /home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/build/pcl -- -j20 -l20
+[0.271s] Invoking command in '/home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/build/pcl': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cloliveira/HW4/gazebotest_ws/install/rrbot_gazebo:/home/cloliveira/HW4/gazebotest_ws/install/rrbot_description:/home/cloliveira/HW4/gazebotest_ws/install/opencv_test_py:/home/cloliveira/rbe450x-ros/install/my_package:/opt/ros/humble /usr/bin/cmake --install /home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/build/pcl
+[0.276s] -- Install configuration: ""
+[0.276s] -- Up-to-date: /home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/install/pcl/lib/pcl/transform_pointcloud
+[0.276s] -- Up-to-date: /home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/environment/pythonpath.sh
+[0.276s] -- Up-to-date: /home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/environment/pythonpath.dsv
+[0.276s] -- Up-to-date: /home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/install/pcl/local/lib/python3.10/dist-packages/pcl-0.0.0-py3.10.egg-info
+[0.276s] -- Installing: /home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/install/pcl/local/lib/python3.10/dist-packages/pcl-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.276s] -- Installing: /home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/install/pcl/local/lib/python3.10/dist-packages/pcl-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.276s] -- Installing: /home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/install/pcl/local/lib/python3.10/dist-packages/pcl-0.0.0-py3.10.egg-info/PKG-INFO
+[0.276s] -- Installing: /home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/install/pcl/local/lib/python3.10/dist-packages/pcl-0.0.0-py3.10.egg-info/top_level.txt
+[0.277s] -- Up-to-date: /home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/install/pcl/local/lib/python3.10/dist-packages/pcl
+[0.277s] -- Up-to-date: /home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/install/pcl/local/lib/python3.10/dist-packages/pcl/__init__.py
+[0.301s] Listing '/home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/install/pcl/local/lib/python3.10/dist-packages/pcl'...
+[0.305s] -- Up-to-date: /home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/ament_index/resource_index/package_run_dependencies/pcl
+[0.305s] -- Up-to-date: /home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/ament_index/resource_index/parent_prefix_path/pcl
+[0.305s] -- Up-to-date: /home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/environment/ament_prefix_path.sh
+[0.305s] -- Up-to-date: /home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/environment/ament_prefix_path.dsv
+[0.305s] -- Up-to-date: /home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/environment/path.sh
+[0.305s] -- Up-to-date: /home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/environment/path.dsv
+[0.305s] -- Up-to-date: /home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/local_setup.bash
+[0.305s] -- Up-to-date: /home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/local_setup.sh
+[0.305s] -- Up-to-date: /home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/local_setup.zsh
+[0.305s] -- Up-to-date: /home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/local_setup.dsv
+[0.305s] -- Installing: /home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/package.dsv
+[0.305s] -- Up-to-date: /home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/ament_index/resource_index/packages/pcl
+[0.305s] -- Up-to-date: /home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/cmake/pclConfig.cmake
+[0.305s] -- Up-to-date: /home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/cmake/pclConfig-version.cmake
+[0.305s] -- Up-to-date: /home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/package.xml
+[0.307s] Invoked command in '/home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/build/pcl' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cloliveira/HW4/gazebotest_ws/install/rrbot_gazebo:/home/cloliveira/HW4/gazebotest_ws/install/rrbot_description:/home/cloliveira/HW4/gazebotest_ws/install/opencv_test_py:/home/cloliveira/rbe450x-ros/install/my_package:/opt/ros/humble /usr/bin/cmake --install /home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/build/pcl

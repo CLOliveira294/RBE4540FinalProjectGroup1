@@ -1,0 +1,3 @@
+source;share/pcl/environment/ament_prefix_path.sh
+source;share/pcl/environment/path.sh
+source;share/pcl/environment/pythonpath.sh

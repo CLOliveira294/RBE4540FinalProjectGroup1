@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-777ef4d120b4b4e1e88b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "pcl",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_pcl_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_pcl_egg-1e5e227017feef6cc8fc.json",
+					"name" : "ament_cmake_python_build_pcl_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_pcl::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_pcl-7e4a2931819cda7783ec.json",
+					"name" : "ament_cmake_python_copy_pcl",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pcl_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pcl_uninstall-9d639d780051f062b04d.json",
+					"name" : "pcl_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "transform_pointcloud::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-transform_pointcloud-95a90b0f0dfaf6b29e99.json",
+					"name" : "transform_pointcloud",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-bbaba700b1b0672d78f1.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/build/pcl",
+		"source" : "/home/cloliveira/Final_Project/RBE4540FinalProjectGroup1/project_ws/src/pcl"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
