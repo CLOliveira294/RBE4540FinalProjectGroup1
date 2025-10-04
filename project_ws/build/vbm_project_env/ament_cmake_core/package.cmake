@@ -1,6 +1,6 @@
 set(_AMENT_PACKAGE_NAME "vbm_project_env")
 set(vbm_project_env_VERSION "0.0.0")
-set(vbm_project_env_MAINTAINER "yash <yash@todo.todo>")
+set(vbm_project_env_MAINTAINER "CristianO <cloliveira@wpi.edu>")
 set(vbm_project_env_BUILD_DEPENDS )
 set(vbm_project_env_BUILDTOOL_DEPENDS "ament_cmake")
 set(vbm_project_env_BUILD_EXPORT_DEPENDS )
