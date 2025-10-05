@@ -109,44 +109,72 @@ class ImageSubscriber(Node):
 
         return closest_Point
     
-    def opposite_closest_point(self, comcoords, closest_point_index, closest_point_slope, contours):
-        new_contours = [p for j, p in enumerate(contours) if j != closest_point_index]
-        
+    def opposite_closest_point(self, comcoords, closest_Point, contours):
+        #Find opposite point robustly, even for vertical/rotated orientations
+        new_contours = [p for p in contours if p != closest_Point]
+        closest_point_slope = self.calculate_slope(comcoords, closest_Point)
+
+        if closest_point_slope == "undefined":
+            return self.opposite_closest_point_angle(comcoords, closest_Point, contours)
+       
         min_slope_diff = float('inf')
         opposite_point = None
 
         for (x, y) in new_contours:
             Point = (x,y)
+
             slope = self.calculate_slope(comcoords, Point)
+            slope_diff = abs(slope - closest_point_slope)
 
-            # For opposite side, we want slope ≈ -closest_point_slope
-            slope_diff = abs(slope - (-closest_point_slope))
+            if slope_diff < min_slope_diff:
+                min_slope_diff = slope_diff
+                opposite_point = (x, y)
 
-        if slope_diff < min_slope_diff:
-            min_slope_diff = slope_diff
-            opposite_point = (x, y)
-
-        print("Closest Point Slope: ")
-        print()
-        print(closest_point_slope)
-        print()
-        print("Opposite Closest Point Slope: ")
-        print()
-        print(min_slope_diff)
+        print(f"Found Opposite Point: {opposite_point}")
         return opposite_point
+    
+    def opposite_closest_point_angle(self, comcoords, closest_Point, contours):
+        cx, cy = comcoords
+        px, py = closest_Point
+        vx, vy = px - cx, py - cy
+        mag_v = math.hypot(vx, vy)
+        if mag_v == 0:
+            return None
+
+        best_point = None
+        min_dot = float('inf')
+
+        for (x, y) in contours:
+            ux, uy = x - cx, y - cy
+            mag_u = math.hypot(ux, uy)
+            if mag_u == 0:
+                continue
+
+            dot = (vx * ux + vy * uy) / (mag_v * mag_u)
+            if dot < min_dot:
+                min_dot = dot
+                best_point = (x, y)
+
+        return best_point
 
     def calculate_slope(self, comcoords, closest_Point):
-        xCOMcoord = comcoords[0]
-        yCOMcoord = comcoords[1]
+        xCOMcoord, yCOMcoord = comcoords
+        xClosest, yClosest = closest_Point
 
-        xClosest = closest_Point[0]
-        yClosest = closest_Point[1]
-
-        top = yClosest - yCOMcoord
-        bot = xClosest - xCOMcoord
+        try: 
+            slope = (yClosest - yCOMcoord) / (xClosest - xCOMcoord)
+            return slope
+        
+        except ZeroDivisionError:
+            return "undefined"
     
-        slope = top/bot
-        return slope
+    def calculate_angle(self, comcoords, point):
+        #Compute robust angle between COM and point (handles vertical lines)
+
+        xCOMcoord, yCOMcoord = comcoords
+        xPoint, yPoint = point
+
+        return math.atan2(yPoint - yCOMcoord, xPoint - xCOMcoord)
     
     def vector_subtraction(self, vector1: Sequence[float], vector2: Sequence[float]) -> Sequence[float]:
         v1 = np.asarray(vector1, dtype=float)
@@ -232,17 +260,14 @@ def main(args=None):
   # Initialize the rclpy library
   rclpy.init(args=args)
   
-  Closest_Point = (3,3)
-  Center_of_Mass = (5,5)
-  Closest_Point_Slope = 1 
-  contours = [(3,3), (7,7), (8,5), (2,8)]
+  Closest_Point = (2,3)
+  Center_of_Mass = (2.5,3)
+  contours = [(2,1), (3,1), (2,2), (3,2), (2,3), (3,3), (2,4), (3,4), (2,5), (3,5)]
 
   # Create the node
   image_subscriber = ImageSubscriber()
 
-  OCLP = image_subscriber.opposite_closest_point(Center_of_Mass, 0, Closest_Point_Slope, contours)
-
-  print(OCLP)
+  OCLP = image_subscriber.opposite_closest_point(Center_of_Mass, Closest_Point, contours)
   
   # Spin the node so the callback function is called.
   rclpy.spin(image_subscriber)
