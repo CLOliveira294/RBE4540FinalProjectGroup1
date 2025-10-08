@@ -49,13 +49,21 @@ class ImageSubscriber(Node):
 
         #Convert ROS Image message to OpenCV image
         current_frame = self.br.imgmsg_to_cv2(data)
-        justcanny = current_frame
 
         #Find center of mass for each object
-        centroids = self.centroids(current_frame)
-        
-        print("\t")
-        print(centroids)
+        contours, comcoords = self.centroids(current_frame)
+        closest = np.zeros((2, len(contours)))
+        opposite = closest
+        cv2.drawContours(current_frame, contours, -1, (150,150,150), 1)
+
+        # Creates comcoords, closest, and opposite 2D numpy lists of equal sizes, and displays the points
+        for i, c in enumerate(contours):
+            closest[:,i] = self.closest_point(c, comcoords[:,i])
+            opposite[:,i] = self.opposite_closest_point(comcoords[:,i],closest[:,i],c)
+            cv2.circle(current_frame, comcoords[:,i], 5, (0,0,255), -1)
+            cv2.circle(current_frame, closest[:,i], 5, (0,255,0), -1)
+            cv2.circle(current_frame, opposite[:,i], 5, (255,0,0), -1)
+
 
         #Show final result of image 
         cv2.imshow("Best Grasp Point of Top Surface", current_frame)
@@ -84,30 +92,37 @@ class ImageSubscriber(Node):
             cY = int(Mom["m01"] / Mom["m00"])
             comcoords[0,i] = cX
             comcoords[1,i] = cY
-            cv2.circle(blur, (cX, cY), 5, (0,0,0), -1)
-            cv2.putText(blur, "centroid", (cX - 25, cY - 25),cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2)
+            #cv2.circle(blur, (cX, cY), 5, (0,0,0), -1)
+            #cv2.putText(blur, "centroid", (cX - 25, cY - 25),cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2)
         else:
             comcoords[0,i] = 0
             comcoords[1,i] = 0
-        cv2.imshow("output_image", blur)
+        #cv2.imshow("output_image", blur)
 
         return contours, comcoords
     
-    def closest_point(self, img):
-        result = self.centroids(self, img)
-        comcoords = result[1]
-        contours = result[0]
-
-        closest_Point = contours[0]
+    # Contour is a single contour
+    # comcoord is a single center of mass
+    def closest_point(self, contour, comcoord):
         min_dist = float('inf')
 
-        for (x, y) in contours: 
-            dist = math.sqrt((x -comcoords[0])**2 + (y - comcoords[1]**2))
-            if dist < min_dist:
-                min_dist = dist
-                closest_Point = (x, y)
+        dist = [min_dist, min_dist]
+        dmag = np.linalg.norm(dist)
+        for j in contour:
+            j = np.squeeze(j)
 
-        return closest_Point
+            # resultant vector from current CoM to point
+            newdist = comcoord - j
+            ndmag = np.linalg.norm(newdist)
+
+            # Check new point against last closest point
+            if (ndmag < dmag):
+                dist = j
+                dmag = ndmag
+        print("closest point to CoM:")
+        print(dist)
+
+        return dist
     
     def opposite_closest_point(self, comcoords, closest_Point, contours):
         #Find opposite point robustly, even for vertical/rotated orientations
