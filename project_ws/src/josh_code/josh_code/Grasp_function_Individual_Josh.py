@@ -96,6 +96,29 @@ def skew_symmetric_matrix(vector: Sequence[float]) -> np.array:
                      [z, 0.0, -x],
                      [-y, x, 0.0]])
 
+def block_diag(Jh_Matrix_List):
+    """
+    Input: A list of Jh_i matrices
+    Output: A correctly built block diagonal matrix based on how many contacts there are.
+    """
+    num_contacts = len(Jh_Matrix_List)
+    rows = 6 * num_contacts   # since each Jhi is 6 rows
+    cols = 2 * num_contacts   # since each Jhi is 2 columns
+
+    Jh_full = np.zeros((rows, cols))  # start with big zero matrix
+
+    #For each Jh_i matrix in Jh_Matrix_List, 
+    # make the corresponding block in Jh_full equal to that Jh_i matrix
+    for i, Jh_i in enumerate(Jh_Matrix_List):
+        row_start = i * 6
+        row_end   = row_start + 6
+        col_start = i * 2
+        col_end   = col_start + 2
+
+        Jh_full[row_start:row_end, col_start:col_end] = Jh_i
+
+    return Jh_full
+
 def grasp_matrix(object_center_location, contact_points_locations, R_contact_list):
     """
     Input: 
@@ -150,6 +173,88 @@ def grasp_matrix(object_center_location, contact_points_locations, R_contact_lis
 
     return Full_Grasp_Matrix_Transpose
 
+def hand_jacobian(object_center_location, contact_points_locations, joints_list, R_contact_list):
+    """
+    Input: 
+    - the target_object's center location as a 3x1 vector, 
+    - and a list of contact point vectors, each of 3x1
+
+    Output: 
+    - a 12x4 Hand Jacobian matrix
+    """
+
+    num_contacts = len(contact_points_locations)
+
+    # # the minimum number of joints per 1 finger
+    # num_joints_per_contact_point = num_contacts - 1
+
+    num_joints_total = len(joints_list)
+    num_joints_per_contact_point = num_joints_total // num_contacts
+
+    
+    Zi_O = np.array([0, 0, 1])
+
+    Ji_Matrix_List = []
+    
+    #Loops over the list of contact points:
+    for i_index, point_vector in enumerate(contact_points_locations):
+        # finger_base = np.array([point_vector[0], 0.0, 0.0])
+
+        one_finger_Joints_List = joints_list[i_index*num_joints_per_contact_point : (i_index+1)*num_joints_per_contact_point]
+        
+        # one_finger_Joints_List.insert(0, finger_base)
+
+        Jvi_vector_column_list = []
+        Jwi_vector_column_list = []
+        
+        #For each joint per 1 finger/or contact point:
+        for i, joint in enumerate(one_finger_Joints_List):
+            #Vector Cross Product:
+            if i == 0:
+                joint_prev = one_finger_Joints_List[0]
+            else:
+                joint_prev = one_finger_Joints_List[i-1]
+            r = vector_subtraction(object_center_location, joint_prev) #####(FIX): Instead of point_vector, there needs to be a real list of joint vector locations
+
+            Jv_instance = np.cross(Zi_O, r) [:, np.newaxis]
+            Jw_instance = Zi_O[:, np.newaxis]
+
+            Jvi_vector_column_list.append(Jv_instance)
+            Jwi_vector_column_list.append(Jw_instance)
+        
+        #Horizontally stack all Jvi columns: 3 x num_joints
+        Jv_block = np.hstack(Jvi_vector_column_list)
+
+        #Horizontally stack all Jwi columns: 3 x num_joints
+        Jw_block = np.hstack(Jwi_vector_column_list)
+
+        Ji = np.vstack((Jv_block, Jw_block))
+        Ji_Matrix_List.append(Ji)
+       
+        print()
+        print("This is a J_i matrix for one contact")
+        print(Ji)
+
+    Jh_Matrix_List = []
+
+    for Ji_Matrix, R_Contact in zip(Ji_Matrix_List, R_contact_list):
+
+        print()
+        print("this is the corresponding rotation matrix for that J_i matrix")
+        print(R_contact_list[i_index])
+
+        Jh_i = np.matmul(R_Contact, Ji_Matrix)
+        Jh_Matrix_List.append(Jh_i)
+
+        print()
+        print("This is the Resulting Jh_i matrix")
+        print(Jh_i)
+    Jh_full = block_diag(Jh_Matrix_List)
+    print()
+    print("This is the Resulting Full Hand Jacobian Matrix (Jh)")
+    print(Jh_full)
+    return Jh_full
+
 if __name__ == "__main__":
 
     #using the joints and contacts from HW 1 as an example
@@ -160,10 +265,15 @@ if __name__ == "__main__":
     object_center = [0, 0.025, 0]
     R_contact_List = R_ci_N_Matrix(contact_points_list, joints_list, R_angles)
 
-    grasp_M = grasp_matrix(object_center, contact_points_list, R_contact_List)
-
+    Jh = hand_jacobian(object_center, contact_points_list, joints_list, R_contact_List)
     print()
-    print("This is the Full Grasp Matrix: ")
-    print(grasp_M)
+    print("This is the Hand Jacobian: ")
+    print(Jh)
+
+    # grasp_M = grasp_matrix(object_center, contact_points_list, R_contact_List)
+
+    # print()
+    # print("This is the Full Grasp Matrix: ")
+    # print(grasp_M)
 
 
