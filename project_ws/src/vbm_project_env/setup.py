@@ -24,7 +24,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'image_subscriber = project_vbm_env.Test1:main',
+            'image_subscriber = vbm_project_env.Test1:main',
         ],
     },
 )

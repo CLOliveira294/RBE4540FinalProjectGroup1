@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-9660e5a84af9525ed225.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "pcl",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_pcl_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_pcl_egg-c6b548b0de77bdcf86a0.json",
+					"name" : "ament_cmake_python_build_pcl_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_pcl::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_pcl-eca9b8d1f0e3b99721dc.json",
+					"name" : "ament_cmake_python_copy_pcl",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pcl_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pcl_uninstall-54912baaa4a7d07249e2.json",
+					"name" : "pcl_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "transform_pointcloud::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-transform_pointcloud-f5e75b055cf5096267fe.json",
+					"name" : "transform_pointcloud",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-bbaba700b1b0672d78f1.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/build/pcl",
+		"source" : "/home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/src/pcl"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

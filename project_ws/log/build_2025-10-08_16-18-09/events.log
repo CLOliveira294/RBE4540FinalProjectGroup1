@@ -1,0 +1,457 @@
+[0.000000] (-) TimerEvent: {}
+[0.000334] (pcl) JobQueued: {'identifier': 'pcl', 'dependencies': OrderedDict()}
+[0.000381] (vbm_project_env) JobQueued: {'identifier': 'vbm_project_env', 'dependencies': OrderedDict()}
+[0.001112] (pcl) JobStarted: {'identifier': 'pcl'}
+[0.006533] (vbm_project_env) JobStarted: {'identifier': 'vbm_project_env'}
+[0.011870] (pcl) JobProgress: {'identifier': 'pcl', 'progress': 'cmake'}
+[0.012397] (pcl) Command: {'cmd': ['/usr/bin/cmake', '/home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/src/pcl', '-DCMAKE_INSTALL_PREFIX=/home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/pcl'], 'cwd': '/home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/build/pcl', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'theo'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/theo'), ('OLDPWD', '/home/theo/Documents/RBE4540FinalProjectGroup1'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1690'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/theo/Documents/RBE4540FinalProjectGroup1/install:/home/theo/Documents/rbe4540-ros/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'theo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'theo'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Authenticity:@/tmp/.ICE-unix/1502,unix/Authenticity:/tmp/.ICE-unix/1502'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e35b8976_2491_41bd_a795_9d1021744d02'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.EFEZD3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.117'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '81'), ('AMENT_PREFIX_PATH', '/home/theo/Documents/RBE4540FinalProjectGroup1/install/vbm_project_env:/home/theo/Documents/RBE4540FinalProjectGroup1/install/pcl:/home/theo/Documents/rbe4540-ros/install/theorobots:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/build/pcl'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/theo/Documents/RBE4540FinalProjectGroup1/install/pcl/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/theo/Documents/RBE4540FinalProjectGroup1/install/vbm_project_env:/home/theo/Documents/RBE4540FinalProjectGroup1/install/pcl:/home/theo/Documents/rbe4540-ros/install/theorobots:/opt/ros/humble')]), 'shell': False}
+[0.015764] (vbm_project_env) JobProgress: {'identifier': 'vbm_project_env', 'progress': 'cmake'}
+[0.016221] (vbm_project_env) Command: {'cmd': ['/usr/bin/cmake', '/home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/src/vbm_project_env', '-DCMAKE_INSTALL_PREFIX=/home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env'], 'cwd': '/home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/build/vbm_project_env', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'theo'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/theo'), ('OLDPWD', '/home/theo/Documents/RBE4540FinalProjectGroup1'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1690'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/theo/Documents/RBE4540FinalProjectGroup1/install:/home/theo/Documents/rbe4540-ros/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'theo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'theo'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Authenticity:@/tmp/.ICE-unix/1502,unix/Authenticity:/tmp/.ICE-unix/1502'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e35b8976_2491_41bd_a795_9d1021744d02'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.EFEZD3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.117'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '81'), ('AMENT_PREFIX_PATH', '/home/theo/Documents/RBE4540FinalProjectGroup1/install/vbm_project_env:/home/theo/Documents/RBE4540FinalProjectGroup1/install/pcl:/home/theo/Documents/rbe4540-ros/install/theorobots:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/build/vbm_project_env'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/theo/Documents/RBE4540FinalProjectGroup1/install/pcl/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/theo/Documents/RBE4540FinalProjectGroup1/install/vbm_project_env:/home/theo/Documents/RBE4540FinalProjectGroup1/install/pcl:/home/theo/Documents/rbe4540-ros/install/theorobots:/opt/ros/humble')]), 'shell': False}
+[0.069760] (pcl) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.073430] (vbm_project_env) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.100007] (-) TimerEvent: {}
+[0.126285] (pcl) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.131377] (vbm_project_env) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.136290] (pcl) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.140969] (vbm_project_env) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.200136] (-) TimerEvent: {}
+[0.207652] (pcl) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.211156] (vbm_project_env) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.215114] (pcl) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.215417] (pcl) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.216154] (pcl) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.219475] (vbm_project_env) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.219833] (vbm_project_env) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.219990] (pcl) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.220236] (vbm_project_env) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.223573] (vbm_project_env) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.299780] (pcl) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.300190] (-) TimerEvent: {}
+[0.304990] (vbm_project_env) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.307596] (pcl) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.307997] (pcl) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.308436] (pcl) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.310435] (pcl) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.314412] (vbm_project_env) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.314680] (vbm_project_env) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.315174] (vbm_project_env) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.317285] (vbm_project_env) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.400287] (-) TimerEvent: {}
+[0.456707] (pcl) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.473038] (vbm_project_env) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.500381] (-) TimerEvent: {}
+[0.561558] (pcl) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[0.572527] (vbm_project_env) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.574093] (pcl) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[0.600478] (-) TimerEvent: {}
+[0.605243] (pcl) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[0.605384] (pcl) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[0.629414] (pcl) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization \n'}
+[0.645263] (pcl) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[0.659785] (pcl) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[0.665846] (vbm_project_env) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.666495] (vbm_project_env) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.667460] (vbm_project_env) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.668913] (vbm_project_env) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.670679] (vbm_project_env) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.674158] (vbm_project_env) StdoutLine: {'line': b'-- Generating done\n'}
+[0.676204] (vbm_project_env) StdoutLine: {'line': b'-- Build files have been written to: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/build/vbm_project_env\n'}
+[0.680746] (vbm_project_env) CommandEnded: {'returncode': 0}
+[0.681393] (vbm_project_env) JobProgress: {'identifier': 'vbm_project_env', 'progress': 'build'}
+[0.682136] (vbm_project_env) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/build/vbm_project_env', '--', '-j4', '-l4'], 'cwd': '/home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/build/vbm_project_env', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'theo'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/theo'), ('OLDPWD', '/home/theo/Documents/RBE4540FinalProjectGroup1'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1690'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/theo/Documents/RBE4540FinalProjectGroup1/install:/home/theo/Documents/rbe4540-ros/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'theo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'theo'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Authenticity:@/tmp/.ICE-unix/1502,unix/Authenticity:/tmp/.ICE-unix/1502'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e35b8976_2491_41bd_a795_9d1021744d02'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.EFEZD3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.117'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '81'), ('AMENT_PREFIX_PATH', '/home/theo/Documents/RBE4540FinalProjectGroup1/install/vbm_project_env:/home/theo/Documents/RBE4540FinalProjectGroup1/install/pcl:/home/theo/Documents/rbe4540-ros/install/theorobots:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/build/vbm_project_env'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/theo/Documents/RBE4540FinalProjectGroup1/install/pcl/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/theo/Documents/RBE4540FinalProjectGroup1/install/vbm_project_env:/home/theo/Documents/RBE4540FinalProjectGroup1/install/pcl:/home/theo/Documents/rbe4540-ros/install/theorobots:/opt/ros/humble')]), 'shell': False}
+[0.700590] (-) TimerEvent: {}
+[0.706753] (pcl) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[0.707032] (pcl) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[0.720890] (vbm_project_env) CommandEnded: {'returncode': 0}
+[0.721621] (vbm_project_env) JobProgress: {'identifier': 'vbm_project_env', 'progress': 'install'}
+[0.731479] (vbm_project_env) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/build/vbm_project_env'], 'cwd': '/home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/build/vbm_project_env', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'theo'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/theo'), ('OLDPWD', '/home/theo/Documents/RBE4540FinalProjectGroup1'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1690'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/theo/Documents/RBE4540FinalProjectGroup1/install:/home/theo/Documents/rbe4540-ros/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'theo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'theo'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Authenticity:@/tmp/.ICE-unix/1502,unix/Authenticity:/tmp/.ICE-unix/1502'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e35b8976_2491_41bd_a795_9d1021744d02'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.EFEZD3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.117'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '81'), ('AMENT_PREFIX_PATH', '/home/theo/Documents/RBE4540FinalProjectGroup1/install/vbm_project_env:/home/theo/Documents/RBE4540FinalProjectGroup1/install/pcl:/home/theo/Documents/rbe4540-ros/install/theorobots:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/build/vbm_project_env'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/theo/Documents/RBE4540FinalProjectGroup1/install/pcl/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/theo/Documents/RBE4540FinalProjectGroup1/install/vbm_project_env:/home/theo/Documents/RBE4540FinalProjectGroup1/install/pcl:/home/theo/Documents/rbe4540-ros/install/theorobots:/opt/ros/humble')]), 'shell': False}
+[0.738896] (vbm_project_env) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.739102] (vbm_project_env) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/vbm_project_env/launch\n'}
+[0.739247] (vbm_project_env) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/vbm_project_env/launch/simulation.launch.py\n'}
+[0.739383] (vbm_project_env) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/vbm_project_env/worlds\n'}
+[0.739515] (vbm_project_env) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/vbm_project_env/worlds/simulation.world\n'}
+[0.739655] (vbm_project_env) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/vbm_project_env/urdf\n'}
+[0.739760] (vbm_project_env) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/vbm_project_env/urdf/camera.urdf\n'}
+[0.739893] (vbm_project_env) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/ament_index/resource_index/package_run_dependencies/vbm_project_env\n'}
+[0.740108] (vbm_project_env) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/ament_index/resource_index/parent_prefix_path/vbm_project_env\n'}
+[0.740307] (vbm_project_env) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/vbm_project_env/environment/ament_prefix_path.sh\n'}
+[0.740479] (vbm_project_env) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/vbm_project_env/environment/ament_prefix_path.dsv\n'}
+[0.740655] (vbm_project_env) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/vbm_project_env/environment/path.sh\n'}
+[0.740855] (vbm_project_env) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/vbm_project_env/environment/path.dsv\n'}
+[0.741053] (vbm_project_env) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/vbm_project_env/local_setup.bash\n'}
+[0.741277] (vbm_project_env) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/vbm_project_env/local_setup.sh\n'}
+[0.741604] (vbm_project_env) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/vbm_project_env/local_setup.zsh\n'}
+[0.741861] (vbm_project_env) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/vbm_project_env/local_setup.dsv\n'}
+[0.742038] (vbm_project_env) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/vbm_project_env/package.dsv\n'}
+[0.742296] (vbm_project_env) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/ament_index/resource_index/packages/vbm_project_env\n'}
+[0.742477] (vbm_project_env) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/vbm_project_env/cmake/vbm_project_envConfig.cmake\n'}
+[0.742640] (vbm_project_env) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/vbm_project_env/cmake/vbm_project_envConfig-version.cmake\n'}
+[0.742799] (vbm_project_env) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/vbm_project_env/share/vbm_project_env/package.xml\n'}
+[0.744586] (vbm_project_env) CommandEnded: {'returncode': 0}
+[0.751850] (pcl) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.765037] (vbm_project_env) JobEnded: {'identifier': 'vbm_project_env', 'rc': 0}
+[0.800712] (-) TimerEvent: {}
+[0.828490] (pcl) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.828704] (pcl) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.900844] (-) TimerEvent: {}
+[0.901014] (pcl) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.901885] (pcl) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.903349] (pcl) StdoutLine: {'line': b'-- Found GLEW: /usr/lib/x86_64-linux-gnu/libGLEW.so  \n'}
+[0.907912] (pcl) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL GLX \n'}
+[1.000940] (-) TimerEvent: {}
+[1.036849] (pcl) StdoutLine: {'line': b'-- Found MPI_C: /usr/lib/x86_64-linux-gnu/libmpi.so (found version "3.1") \n'}
+[1.037171] (pcl) StdoutLine: {'line': b'-- Found MPI: TRUE (found version "3.1") found components: C \n'}
+[1.039214] (pcl) StdoutLine: {'line': b'-- Found JsonCpp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") \n'}
+[1.048011] (pcl) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") \n'}
+[1.063419] (pcl) StdoutLine: {'line': b'-- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") \n'}
+[1.073914] (pcl) StdoutLine: {'line': b'-- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") \n'}
+[1.101036] (-) TimerEvent: {}
+[1.153561] (pcl) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[1.153774] (pcl) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so\n'}
+[1.201152] (-) TimerEvent: {}
+[1.222364] (pcl) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found\n'}
+[1.222551] (pcl) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[1.287534] (pcl) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[1.287731] (pcl) StdoutLine: {'line': b'-- Looking for connect\n'}
+[1.301282] (-) TimerEvent: {}
+[1.354968] (pcl) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[1.355213] (pcl) StdoutLine: {'line': b'-- Looking for remove\n'}
+[1.401377] (-) TimerEvent: {}
+[1.420724] (pcl) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[1.420959] (pcl) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[1.485365] (pcl) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[1.485613] (pcl) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[1.501470] (-) TimerEvent: {}
+[1.552438] (pcl) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[1.601579] (-) TimerEvent: {}
+[1.624887] (pcl) StdoutLine: {'line': b'-- Found EXPAT: /usr/lib/x86_64-linux-gnu/libexpat.so (found version "2.4.7") \n'}
+[1.626703] (pcl) StdoutLine: {'line': b'-- Found double-conversion: /usr/lib/x86_64-linux-gnu/libdouble-conversion.so  \n'}
+[1.630101] (pcl) StdoutLine: {'line': b'-- Found LZ4: /usr/lib/x86_64-linux-gnu/liblz4.so (found version "1.9.3") \n'}
+[1.632362] (pcl) StdoutLine: {'line': b'-- Found LZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.5") \n'}
+[1.643688] (pcl) StdoutLine: {'line': b'-- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") \n'}
+[1.649861] (pcl) StdoutLine: {'line': b'-- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.3.0")  \n'}
+[1.656764] (pcl) StdoutLine: {'line': b'-- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.11.1") \n'}
+[1.662126] (pcl) StdoutLine: {'line': b'-- Found utf8cpp: /usr/include/utf8cpp  \n'}
+[1.701683] (-) TimerEvent: {}
+[1.741612] (pcl) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[1.755593] (pcl) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[1.788559] (pcl) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[1.789559] (pcl) StdoutLine: {'line': b'-- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") \n'}
+[1.789695] (pcl) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[1.801800] (-) TimerEvent: {}
+[1.841198] (pcl) StdoutLine: {'line': b'-- Found OpenNI2: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") \n'}
+[1.841336] (pcl) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[1.841524] (pcl) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to pcap will be disabled\x1b[0m\n'}
+[1.901945] (-) TimerEvent: {}
+[1.985121] (pcl) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.991097] (pcl) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[1.997121] (pcl) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[2.002012] (-) TimerEvent: {}
+[2.102244] (-) TimerEvent: {}
+[2.131786] (pcl) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[2.202378] (-) TimerEvent: {}
+[2.270937] (pcl) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.302522] (-) TimerEvent: {}
+[2.402798] (-) TimerEvent: {}
+[2.403940] (pcl) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[2.404814] (pcl) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[2.405040] (pcl) StdoutLine: {'line': b'-- looking for PCL_KDTREE\n'}
+[2.405813] (pcl) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[2.405998] (pcl) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[2.406675] (pcl) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[2.406847] (pcl) StdoutLine: {'line': b'-- looking for PCL_SEARCH\n'}
+[2.407743] (pcl) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[2.407955] (pcl) StdoutLine: {'line': b'-- looking for PCL_SAMPLE_CONSENSUS\n'}
+[2.408657] (pcl) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[2.408865] (pcl) StdoutLine: {'line': b'-- looking for PCL_FILTERS\n'}
+[2.409566] (pcl) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[2.409837] (pcl) StdoutLine: {'line': b'-- looking for PCL_2D\n'}
+[2.410175] (pcl) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[2.410386] (pcl) StdoutLine: {'line': b'-- looking for PCL_GEOMETRY\n'}
+[2.410708] (pcl) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[2.410874] (pcl) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[2.411632] (pcl) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[2.411816] (pcl) StdoutLine: {'line': b'-- looking for PCL_FEATURES\n'}
+[2.412465] (pcl) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[2.412676] (pcl) StdoutLine: {'line': b'-- looking for PCL_ML\n'}
+[2.413902] (pcl) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[2.414041] (pcl) StdoutLine: {'line': b'-- looking for PCL_SEGMENTATION\n'}
+[2.414661] (pcl) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[2.415171] (pcl) StdoutLine: {'line': b'-- looking for PCL_VISUALIZATION\n'}
+[2.415824] (pcl) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[2.416087] (pcl) StdoutLine: {'line': b'-- looking for PCL_SURFACE\n'}
+[2.416978] (pcl) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[2.417164] (pcl) StdoutLine: {'line': b'-- looking for PCL_REGISTRATION\n'}
+[2.417816] (pcl) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[2.418117] (pcl) StdoutLine: {'line': b'-- looking for PCL_KEYPOINTS\n'}
+[2.418757] (pcl) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[2.419039] (pcl) StdoutLine: {'line': b'-- looking for PCL_TRACKING\n'}
+[2.419681] (pcl) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[2.420034] (pcl) StdoutLine: {'line': b'-- looking for PCL_RECOGNITION\n'}
+[2.420691] (pcl) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[2.421064] (pcl) StdoutLine: {'line': b'-- looking for PCL_STEREO\n'}
+[2.421965] (pcl) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[2.422089] (pcl) StdoutLine: {'line': b'-- looking for PCL_APPS\n'}
+[2.422755] (pcl) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[2.423337] (pcl) StdoutLine: {'line': b'-- looking for PCL_IN_HAND_SCANNER\n'}
+[2.423574] (pcl) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[2.423715] (pcl) StdoutLine: {'line': b'-- looking for PCL_MODELER\n'}
+[2.424118] (pcl) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[2.424312] (pcl) StdoutLine: {'line': b'-- looking for PCL_POINT_CLOUD_EDITOR\n'}
+[2.424690] (pcl) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[2.424846] (pcl) StdoutLine: {'line': b'-- looking for PCL_OUTOFCORE\n'}
+[2.425580] (pcl) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[2.425739] (pcl) StdoutLine: {'line': b'-- looking for PCL_PEOPLE\n'}
+[2.426780] (pcl) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[2.427556] (pcl) StdoutLine: {'line': b'-- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL  \n'}
+[2.429479] (pcl) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[2.462567] (pcl) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.466926] (pcl) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.474582] (pcl) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.485928] (pcl) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.501516] (pcl) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.502887] (-) TimerEvent: {}
+[2.544982] (pcl) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.547474] (pcl) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.602994] (-) TimerEvent: {}
+[2.638287] (pcl) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.663001] (pcl) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.703114] (-) TimerEvent: {}
+[2.704415] (pcl) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.764297] (pcl) StdoutLine: {'line': b'-- Found rclpy: 3.3.17 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[2.765734] (pcl) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[2.797917] (pcl) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[2.803227] (-) TimerEvent: {}
+[2.825496] (pcl) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[2.903353] (-) TimerEvent: {}
+[2.923377] (pcl) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[2.935952] (pcl) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[2.937175] (pcl) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[2.937330] (pcl) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[2.939728] (pcl) StdoutLine: {'line': b'-- Found tf2_py: 0.25.16 (/opt/ros/humble/share/tf2_py/cmake)\n'}
+[2.941176] (pcl) StdoutLine: {'line': b'-- Found tf2_eigen: 0.25.16 (/opt/ros/humble/share/tf2_eigen/cmake)\n'}
+[3.003473] (-) TimerEvent: {}
+[3.031620] (pcl) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.103596] (-) TimerEvent: {}
+[3.109619] (pcl) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[3.110728] (pcl) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[3.113880] (pcl) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/src/pcl/include\n'}
+[3.114008] (pcl) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[3.114396] (pcl) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[3.114905] (pcl) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.115479] (pcl) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[3.116259] (pcl) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[3.116343] (pcl) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[3.116706] (pcl) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.118065] (pcl) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.203726] (-) TimerEvent: {}
+[3.214309] (pcl) StdoutLine: {'line': b'-- Generating done\n'}
+[3.228548] (pcl) StdoutLine: {'line': b'-- Build files have been written to: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/build/pcl\n'}
+[3.246803] (pcl) CommandEnded: {'returncode': 0}
+[3.247985] (pcl) JobProgress: {'identifier': 'pcl', 'progress': 'build'}
+[3.249062] (pcl) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/build/pcl', '--', '-j4', '-l4'], 'cwd': '/home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/build/pcl', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'theo'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/theo'), ('OLDPWD', '/home/theo/Documents/RBE4540FinalProjectGroup1'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1690'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/theo/Documents/RBE4540FinalProjectGroup1/install:/home/theo/Documents/rbe4540-ros/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'theo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'theo'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Authenticity:@/tmp/.ICE-unix/1502,unix/Authenticity:/tmp/.ICE-unix/1502'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e35b8976_2491_41bd_a795_9d1021744d02'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.EFEZD3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.117'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '81'), ('AMENT_PREFIX_PATH', '/home/theo/Documents/RBE4540FinalProjectGroup1/install/vbm_project_env:/home/theo/Documents/RBE4540FinalProjectGroup1/install/pcl:/home/theo/Documents/rbe4540-ros/install/theorobots:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/build/pcl'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/theo/Documents/RBE4540FinalProjectGroup1/install/pcl/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/theo/Documents/RBE4540FinalProjectGroup1/install/vbm_project_env:/home/theo/Documents/RBE4540FinalProjectGroup1/install/pcl:/home/theo/Documents/rbe4540-ros/install/theorobots:/opt/ros/humble')]), 'shell': False}
+[3.303836] (-) TimerEvent: {}
+[3.305589] (pcl) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/transform_pointcloud.dir/src/transform_pointcloud.cpp.o\x1b[0m\n'}
+[3.312272] (pcl) StdoutLine: {'line': b'[ 50%] Built target ament_cmake_python_copy_pcl\n'}
+[3.403876] (-) TimerEvent: {}
+[3.504213] (-) TimerEvent: {}
+[3.573834] (pcl) StdoutLine: {'line': b'running egg_info\n'}
+[3.574379] (pcl) StdoutLine: {'line': b'creating pcl.egg-info\n'}
+[3.574594] (pcl) StdoutLine: {'line': b'writing pcl.egg-info/PKG-INFO\n'}
+[3.574798] (pcl) StdoutLine: {'line': b'writing dependency_links to pcl.egg-info/dependency_links.txt\n'}
+[3.575075] (pcl) StdoutLine: {'line': b'writing top-level names to pcl.egg-info/top_level.txt\n'}
+[3.575265] (pcl) StdoutLine: {'line': b"writing manifest file 'pcl.egg-info/SOURCES.txt'\n"}
+[3.577451] (pcl) StdoutLine: {'line': b"reading manifest file 'pcl.egg-info/SOURCES.txt'\n"}
+[3.577914] (pcl) StdoutLine: {'line': b"writing manifest file 'pcl.egg-info/SOURCES.txt'\n"}
+[3.604309] (-) TimerEvent: {}
+[3.607323] (pcl) StdoutLine: {'line': b'[ 50%] Built target ament_cmake_python_build_pcl_egg\n'}
+[3.704404] (-) TimerEvent: {}
+[3.804722] (-) TimerEvent: {}
+[3.905000] (-) TimerEvent: {}
+[4.005277] (-) TimerEvent: {}
+[4.105573] (-) TimerEvent: {}
+[4.205857] (-) TimerEvent: {}
+[4.306096] (-) TimerEvent: {}
+[4.406394] (-) TimerEvent: {}
+[4.506687] (-) TimerEvent: {}
+[4.607036] (-) TimerEvent: {}
+[4.707380] (-) TimerEvent: {}
+[4.807716] (-) TimerEvent: {}
+[4.908036] (-) TimerEvent: {}
+[5.008448] (-) TimerEvent: {}
+[5.108747] (-) TimerEvent: {}
+[5.209009] (-) TimerEvent: {}
+[5.309279] (-) TimerEvent: {}
+[5.409595] (-) TimerEvent: {}
+[5.509881] (-) TimerEvent: {}
+[5.610250] (-) TimerEvent: {}
+[5.710494] (-) TimerEvent: {}
+[5.810727] (-) TimerEvent: {}
+[5.910973] (-) TimerEvent: {}
+[6.011241] (-) TimerEvent: {}
+[6.111536] (-) TimerEvent: {}
+[6.211848] (-) TimerEvent: {}
+[6.312141] (-) TimerEvent: {}
+[6.412426] (-) TimerEvent: {}
+[6.512704] (-) TimerEvent: {}
+[6.612978] (-) TimerEvent: {}
+[6.713256] (-) TimerEvent: {}
+[6.813540] (-) TimerEvent: {}
+[6.913836] (-) TimerEvent: {}
+[7.014068] (-) TimerEvent: {}
+[7.114320] (-) TimerEvent: {}
+[7.214630] (-) TimerEvent: {}
+[7.314886] (-) TimerEvent: {}
+[7.415164] (-) TimerEvent: {}
+[7.515439] (-) TimerEvent: {}
+[7.615763] (-) TimerEvent: {}
+[7.716052] (-) TimerEvent: {}
+[7.816337] (-) TimerEvent: {}
+[7.916615] (-) TimerEvent: {}
+[8.016884] (-) TimerEvent: {}
+[8.117174] (-) TimerEvent: {}
+[8.217472] (-) TimerEvent: {}
+[8.317835] (-) TimerEvent: {}
+[8.418184] (-) TimerEvent: {}
+[8.518463] (-) TimerEvent: {}
+[8.618748] (-) TimerEvent: {}
+[8.719088] (-) TimerEvent: {}
+[8.819427] (-) TimerEvent: {}
+[8.919709] (-) TimerEvent: {}
+[9.020028] (-) TimerEvent: {}
+[9.120399] (-) TimerEvent: {}
+[9.220701] (-) TimerEvent: {}
+[9.320993] (-) TimerEvent: {}
+[9.421296] (-) TimerEvent: {}
+[9.521578] (-) TimerEvent: {}
+[9.621881] (-) TimerEvent: {}
+[9.722189] (-) TimerEvent: {}
+[9.822464] (-) TimerEvent: {}
+[9.922804] (-) TimerEvent: {}
+[10.023091] (-) TimerEvent: {}
+[10.123370] (-) TimerEvent: {}
+[10.223644] (-) TimerEvent: {}
+[10.323886] (-) TimerEvent: {}
+[10.424177] (-) TimerEvent: {}
+[10.524457] (-) TimerEvent: {}
+[10.624750] (-) TimerEvent: {}
+[10.725048] (-) TimerEvent: {}
+[10.825361] (-) TimerEvent: {}
+[10.925647] (-) TimerEvent: {}
+[11.025880] (-) TimerEvent: {}
+[11.126213] (-) TimerEvent: {}
+[11.226504] (-) TimerEvent: {}
+[11.326769] (-) TimerEvent: {}
+[11.427024] (-) TimerEvent: {}
+[11.527314] (-) TimerEvent: {}
+[11.627770] (-) TimerEvent: {}
+[11.728094] (-) TimerEvent: {}
+[11.828364] (-) TimerEvent: {}
+[11.928598] (-) TimerEvent: {}
+[12.028881] (-) TimerEvent: {}
+[12.129157] (-) TimerEvent: {}
+[12.229414] (-) TimerEvent: {}
+[12.329687] (-) TimerEvent: {}
+[12.429918] (-) TimerEvent: {}
+[12.530207] (-) TimerEvent: {}
+[12.630470] (-) TimerEvent: {}
+[12.730749] (-) TimerEvent: {}
+[12.831008] (-) TimerEvent: {}
+[12.931276] (-) TimerEvent: {}
+[13.031578] (-) TimerEvent: {}
+[13.131881] (-) TimerEvent: {}
+[13.232167] (-) TimerEvent: {}
+[13.332473] (-) TimerEvent: {}
+[13.432756] (-) TimerEvent: {}
+[13.533002] (-) TimerEvent: {}
+[13.633295] (-) TimerEvent: {}
+[13.733611] (-) TimerEvent: {}
+[13.833904] (-) TimerEvent: {}
+[13.934173] (-) TimerEvent: {}
+[14.034489] (-) TimerEvent: {}
+[14.134831] (-) TimerEvent: {}
+[14.235076] (-) TimerEvent: {}
+[14.335395] (-) TimerEvent: {}
+[14.435687] (-) TimerEvent: {}
+[14.535969] (-) TimerEvent: {}
+[14.636251] (-) TimerEvent: {}
+[14.736569] (-) TimerEvent: {}
+[14.836859] (-) TimerEvent: {}
+[14.937125] (-) TimerEvent: {}
+[15.037400] (-) TimerEvent: {}
+[15.137689] (-) TimerEvent: {}
+[15.237917] (-) TimerEvent: {}
+[15.338193] (-) TimerEvent: {}
+[15.438481] (-) TimerEvent: {}
+[15.538769] (-) TimerEvent: {}
+[15.639026] (-) TimerEvent: {}
+[15.739316] (-) TimerEvent: {}
+[15.839602] (-) TimerEvent: {}
+[15.939876] (-) TimerEvent: {}
+[16.040139] (-) TimerEvent: {}
+[16.140430] (-) TimerEvent: {}
+[16.240702] (-) TimerEvent: {}
+[16.340961] (-) TimerEvent: {}
+[16.441257] (-) TimerEvent: {}
+[16.541538] (-) TimerEvent: {}
+[16.641790] (-) TimerEvent: {}
+[16.742083] (-) TimerEvent: {}
+[16.842395] (-) TimerEvent: {}
+[16.942644] (-) TimerEvent: {}
+[17.042914] (-) TimerEvent: {}
+[17.143177] (-) TimerEvent: {}
+[17.243487] (-) TimerEvent: {}
+[17.343773] (-) TimerEvent: {}
+[17.444087] (-) TimerEvent: {}
+[17.544369] (-) TimerEvent: {}
+[17.554031] (pcl) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable transform_pointcloud\x1b[0m\n'}
+[17.644469] (-) TimerEvent: {}
+[17.744754] (-) TimerEvent: {}
+[17.845081] (-) TimerEvent: {}
+[17.945364] (-) TimerEvent: {}
+[18.045650] (-) TimerEvent: {}
+[18.145893] (-) TimerEvent: {}
+[18.246167] (-) TimerEvent: {}
+[18.346448] (-) TimerEvent: {}
+[18.446750] (-) TimerEvent: {}
+[18.547042] (-) TimerEvent: {}
+[18.647339] (-) TimerEvent: {}
+[18.747635] (-) TimerEvent: {}
+[18.847912] (-) TimerEvent: {}
+[18.897830] (pcl) StdoutLine: {'line': b'[100%] Built target transform_pointcloud\n'}
+[18.909093] (pcl) CommandEnded: {'returncode': 0}
+[18.909658] (pcl) JobProgress: {'identifier': 'pcl', 'progress': 'install'}
+[18.910485] (pcl) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/build/pcl'], 'cwd': '/home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/build/pcl', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'theo'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/theo'), ('OLDPWD', '/home/theo/Documents/RBE4540FinalProjectGroup1'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1690'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/theo/Documents/RBE4540FinalProjectGroup1/install:/home/theo/Documents/rbe4540-ros/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'theo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'theo'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Authenticity:@/tmp/.ICE-unix/1502,unix/Authenticity:/tmp/.ICE-unix/1502'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e35b8976_2491_41bd_a795_9d1021744d02'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.EFEZD3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.117'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '81'), ('AMENT_PREFIX_PATH', '/home/theo/Documents/RBE4540FinalProjectGroup1/install/vbm_project_env:/home/theo/Documents/RBE4540FinalProjectGroup1/install/pcl:/home/theo/Documents/rbe4540-ros/install/theorobots:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/build/pcl'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/theo/Documents/RBE4540FinalProjectGroup1/install/pcl/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/theo/Documents/RBE4540FinalProjectGroup1/install/vbm_project_env:/home/theo/Documents/RBE4540FinalProjectGroup1/install/pcl:/home/theo/Documents/rbe4540-ros/install/theorobots:/opt/ros/humble')]), 'shell': False}
+[18.918250] (pcl) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[18.918514] (pcl) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/pcl/lib/pcl/transform_pointcloud\n'}
+[18.921951] (pcl) StdoutLine: {'line': b'-- Set runtime path of "/home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/pcl/lib/pcl/transform_pointcloud" to ""\n'}
+[18.922192] (pcl) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/environment/pythonpath.sh\n'}
+[18.922365] (pcl) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/environment/pythonpath.dsv\n'}
+[18.922519] (pcl) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/pcl/local/lib/python3.10/dist-packages/pcl-0.0.0-py3.10.egg-info\n'}
+[18.922726] (pcl) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/pcl/local/lib/python3.10/dist-packages/pcl-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[18.922904] (pcl) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/pcl/local/lib/python3.10/dist-packages/pcl-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[18.923051] (pcl) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/pcl/local/lib/python3.10/dist-packages/pcl-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[18.923168] (pcl) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/pcl/local/lib/python3.10/dist-packages/pcl-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[18.923319] (pcl) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/pcl/local/lib/python3.10/dist-packages/pcl\n'}
+[18.923468] (pcl) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/pcl/local/lib/python3.10/dist-packages/pcl/__init__.py\n'}
+[18.947988] (-) TimerEvent: {}
+[18.952182] (pcl) StdoutLine: {'line': b"Listing '/home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/pcl/local/lib/python3.10/dist-packages/pcl'...\n"}
+[18.952371] (pcl) StdoutLine: {'line': b"Compiling '/home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/pcl/local/lib/python3.10/dist-packages/pcl/__init__.py'...\n"}
+[18.956739] (pcl) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/ament_index/resource_index/package_run_dependencies/pcl\n'}
+[18.956955] (pcl) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/ament_index/resource_index/parent_prefix_path/pcl\n'}
+[18.957093] (pcl) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/environment/ament_prefix_path.sh\n'}
+[18.957223] (pcl) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/environment/ament_prefix_path.dsv\n'}
+[18.957351] (pcl) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/environment/path.sh\n'}
+[18.957488] (pcl) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/environment/path.dsv\n'}
+[18.957626] (pcl) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/local_setup.bash\n'}
+[18.957783] (pcl) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/local_setup.sh\n'}
+[18.957921] (pcl) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/local_setup.zsh\n'}
+[18.958044] (pcl) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/local_setup.dsv\n'}
+[18.958166] (pcl) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/package.dsv\n'}
+[18.958360] (pcl) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/ament_index/resource_index/packages/pcl\n'}
+[18.958569] (pcl) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/cmake/pclConfig.cmake\n'}
+[18.958735] (pcl) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/cmake/pclConfig-version.cmake\n'}
+[18.958890] (pcl) StdoutLine: {'line': b'-- Installing: /home/theo/Documents/RBE4540FinalProjectGroup1/project_ws/install/pcl/share/pcl/package.xml\n'}
+[18.960795] (pcl) CommandEnded: {'returncode': 0}
+[18.971165] (pcl) JobEnded: {'identifier': 'pcl', 'rc': 0}
+[18.971877] (-) EventReactorShutdown: {}
