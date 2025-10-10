@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<robot name="blue_cube">
+
+  <!-- Inertial, collision, and visual definitions for a 10 cm cube -->
+  <link name="cube_link">
+
+    <!-- Inertial properties -->
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.5"/> <!-- kg -->
+      <inertia ixx="0.000833" ixy="0.0" ixz="0.0"
+               iyy="0.000833" iyz="0.0"
+               izz="0.000833"/> <!-- approximate inertia for uniform cube -->
+    </inertial>
+
+    <!-- Collision geometry -->
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.1 0.1 0.1"/> <!-- 10cm cube -->
+      </geometry>
+    </collision>
+
+    <!-- Visual geometry -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.1 0.1 0.1"/>
+      </geometry>
+      <material name="Blue">
+        <color rgba="0 0 1 1"/> <!-- Solid blue -->
+      </material>
+    </visual>
+
+  </link>
+
+</robot>

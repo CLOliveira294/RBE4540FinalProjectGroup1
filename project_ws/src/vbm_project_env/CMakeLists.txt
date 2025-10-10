@@ -14,6 +14,10 @@ find_package(ament_cmake REQUIRED)
 install(DIRECTORY launch worlds urdf
   DESTINATION share/${PROJECT_NAME}) 
 
+install(PROGRAMS ~/Final_Project/RBE4540FinalProjectGroup1/project_ws/src/vbm_project_env/vbm_project_env/test1.py
+        DESTINATION lib/${PROJECT_NAME})
+
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
