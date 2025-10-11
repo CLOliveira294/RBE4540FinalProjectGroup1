@@ -147,6 +147,20 @@ class ImageSubscriber(Node):
 
         return Unit_Vector_Closest, Unit_Vector_Opposite_Closest
     
+    #Calculates the Skew Symmetric Matrix for a given Vector 
+    def skew_symmetric_matrix(self, vector: Sequence[float]) -> np.array:
+        r = np.asarray(vector, dtype=float).reshape(3)
+        x, y, z = r
+        return np.array([[0.0, -z, y],
+                         [z, 0.0, -x],
+                         [-y, x, 0.0]])
+    
+    #Calculates the Rotation Matrix for Rotating about the Z Axis
+    def joint_rotation_matrix_aboutZ(self, c, s):
+        return np.array([[c, -s, 0],
+                         [s, c, 0],
+                         [0, 0, 1]])
+
     #Finds the Closest Point with the given contour and the center of mass coordinates 
     def closest_point(self, contour, comcoord):
 
