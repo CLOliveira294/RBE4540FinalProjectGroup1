@@ -96,58 +96,82 @@ class ImageSubscriber(Node):
 
     #Function to find the center of mass of the top surface of an object 
     def centroids(self, img): 
+        #Creates Gray scale image
         grey_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+
+        #Canny Edge Detection of Gray Scale Image
         edge = cv2.Canny(grey_img, 100, 200)
+
+        #Decalres kernel which will be used to dilate image
         kernel = np.ones((5,5), np.uint8)
+
+        #Dilate the Canny Edge Detection Image to Find the Contours
         dilated = cv2.dilate(edge, kernel, iterations=1) 
+
+        #Blur the Dilated image to smooth out all noise
         blur = cv2.GaussianBlur(dilated, (5, 5), cv2.BORDER_DEFAULT)
-        #ret, thresh = cv2.threshold(blur, 127, 255,cv2.THRESH_BINARY_INV)
+
+        #Usage of OpenCV Function to find the Contours in the image
         contours, hierarchy = cv2.findContours(blur,cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE)
+
+        #Declares Center of Mass Coords Variable
         comcoords = np.zeros((2, len(contours)))
+
+        #Iterate through contours to find Center of Mass Coordinates
         for i, c in enumerate(contours):
             Mom = cv2.moments(c)
+
+        #Calculates/Finds Center of Mass Coords
         if (Mom["m00"]!= 0):
             cX = int(Mom["m10"] / Mom["m00"])
             cY = int(Mom["m01"] / Mom["m00"])
             comcoords[0,i] = cX
             comcoords[1,i] = cY
-            #cv2.circle(blur, (cX, cY), 5, (0,0,0), -1)
-            #cv2.putText(blur, "centroid", (cX - 25, cY - 25),cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2)
+
+        #Else case if Center of Mass Coords are not defined
         else:
             comcoords[0,i] = 0
             comcoords[1,i] = 0
 
-        # cv2.imshow("output_image", blur)
-        # cv2.waitKey(1)
-
         return contours, comcoords
-    
+
+    #Finds the Unit Vector of the closest and opposite closest point using the center of mass coordinates
     def find_Unit_Vector(self, comcoord, closest_point, opposite_closest_point):
+        #Calculates the Normal Vector for the Closest and Opposite Closest Point
         Normal_Vector_Closest = comcoord - closest_point
         Normal_Vector_Opposite_Closest = comcoord - opposite_closest_point
 
+        #Calculates the Unit Vector for the Closest and Opposite Closest Point
         Unit_Vector_Closest = (Normal_Vector_Closest/np.linalg.norm(Normal_Vector_Closest))
         Unit_Vector_Opposite_Closest = (Normal_Vector_Opposite_Closest/np.linalg.norm(Normal_Vector_Opposite_Closest))
 
         return Unit_Vector_Closest, Unit_Vector_Opposite_Closest
     
-    # Contour is a single contour
-    # comcoord is a single center of mass
+    #Finds the Closest Point with the given contour and the center of mass coordinates 
     def closest_point(self, contour, comcoord):
+
+        #Declares the minimum distance in order to compare it to find the closest point
         min_dist = float('inf')
 
+        #Decalres a variable to hold the closest point
         Closest_Point = tuple([min_dist, min_dist])
-        dmag = np.linalg.norm(Closest_Point) #Magnitude of Closest Point
 
+        #Finds magmitude of closest point
+        dmag = np.linalg.norm(Closest_Point) 
+
+        #Iterate through loop of each point in the contour 
         for j in contour:
-
+            
+            #Squeeze J
             j = np.squeeze(j)
 
-            # resultant vector from current CoM to point
+            #Resultant vector from current CoM to point
             newdist = comcoord - j
+
+            #New magnitude of Closest Point
             ndmag = np.linalg.norm(newdist)
 
-            # Check new point against last closest point
+            #Check new point against last closest point
             if (ndmag < dmag):
                 Closest_Point = j
                 dmag = ndmag
@@ -156,190 +180,67 @@ class ImageSubscriber(Node):
 
         return Closest_Point
     
+    #Finds the Opposite Closest Point with the given contour, the closest point, and the center of mass coordinates 
     def opposite_closest_point(self, comcoords, closest_Point, contour):
-        #Find opposite point robustly, even for vertical/rotated orientations
 
-        #new_contour = [p for p in contour if not np.array_equal(p, closest_Point)]
-
+        #Calculate the Normal Vector of the Closest Point
         Normal_vector = comcoords - closest_Point
 
+        #Find the Unit Vector of the Normal Vector and Reverse Direction to become Opposite
         Unit_vector = (Normal_vector/np.linalg.norm(Normal_vector))*-1
 
+        #Declares the minimum distance in order to compare it to find the closest point
         Smallest_diff = tuple([float('inf'),float('inf')])
+
+        #Declares a variable to hold the opposite closest point
         Opposite_closest_point = tuple([0,0])
 
+        #Iterate through loop of each point in the contour
         for i in contour:
 
+           #Squeeze I 
             i = np.squeeze(i)
 
+            #Calculate the new Normal Vector of the current Point
             Normal_vector_contour = comcoords - i
 
+            #Find the Unit Vector of the current Normal Vector 
             Unit_vector_contour = (Normal_vector_contour/np.linalg.norm(Normal_vector_contour))
 
+            #Find the difference between the two unit vectors 
             Unit_diff = abs(Unit_vector - Unit_vector_contour)
             
-
+            #Check new point against last opposite closest point
             if(np.all(Unit_diff < Smallest_diff)):
                 Smallest_diff = Unit_diff
                 Opposite_closest_point = i
-        # print(f"Opposite Closest Point: {Opposite_closest_point}")
 
         print("opposite point to closest point:")
         print(Opposite_closest_point)
 
         return Opposite_closest_point
     
-        # closest_point_slope = self.calculate_slope(comcoords, closest_Point)
-
-        # if closest_point_slope == "undefined":
-        #     return self.opposite_closest_point_angle(comcoords, closest_Point, contours)
-       
-        # min_slope_diff = float('inf')
-        # opposite_point = None
-
-        # for p in new_contours:
-        #     x, y = np.squeeze(p)
-        #     Point = (x,y)
-
-        #     slope = self.calculate_slope(comcoords, Point)
-        #     slope_diff = abs(slope - closest_point_slope)
-
-        #     if slope_diff < min_slope_diff:
-        #         min_slope_diff = slope_diff
-        #         opposite_point = (x, y)
-
-        # print(f"Found Opposite Point: {opposite_point}")
-
-    
-    def opposite_closest_point_angle(self, comcoords, closest_Point, contours):
-        cx, cy = comcoords
-        px, py = closest_Point
-        vx, vy = px - cx, py - cy
-        mag_v = math.hypot(vx, vy)
-        if mag_v == 0:
-            return None
-
-        best_point = None
-        min_dot = float('inf')
-
-        for (x, y) in contours:
-            ux, uy = x - cx, y - cy
-            mag_u = math.hypot(ux, uy)
-            if mag_u == 0:
-                continue
-
-            dot = (vx * ux + vy * uy) / (mag_v * mag_u)
-            if dot < min_dot:
-                min_dot = dot
-                best_point = (x, y)
-
-        return best_point
-
-    # def calculate_slope(self, comcoords, closest_Point):
-    #     xCOMcoord, yCOMcoord = comcoords
-    #     xClosest, yClosest = closest_Point
-
-    #     try: 
-    #         slope = (yClosest - yCOMcoord) / (xClosest - xCOMcoord)
-    #         return slope
-        
-    #     except ZeroDivisionError:
-    #         return "undefined"
-    
-    # def calculate_angle(self, comcoords, point):
-    #     #Compute robust angle between COM and point (handles vertical lines)
-
-    #     xCOMcoord, yCOMcoord = comcoords
-    #     xPoint, yPoint = point
-
-    #     return math.atan2(yPoint - yCOMcoord, xPoint - xCOMcoord)
-    
-    def vector_subtraction(self, vector1: Sequence[float], vector2: Sequence[float]) -> Sequence[float]:
-        v1 = np.asarray(vector1, dtype=float)
-        v2 = np.asarray(vector2, dtype=float)
-        return v1 - v2
-
-    def joint_rotation_matrix_aboutZ(self, c, s):
-
-        return np.array([[c, -s, 0],
-                         [s, c, 0],
-                         [0, 0, 1]])
-    
-    def skew_symmetric_matrix(self, vector: Sequence[float]) -> np.array:
-        r = np.asarray(vector, dtype=float).reshape(3)
-        x, y, z = r
-        return np.array([[0.0, -z, y],
-                         [z, 0.0, -x],
-                         [-y, x, 0.0]])
-    
-    # def R_ci_N_Matrix(self, contact_points_locations, joints_list, contact_rotation_angle):
-    #     num_contacts = len(contact_points_locations)
-    #     num_joints_total = len(joints_list)
-    #     num_joints_per_contact_point = num_joints_total // num_contacts
-
-    #     R_contact_list = []
-
-    #     for index, contact_i in enumerate(contact_points_locations):
-    #         theta = contact_rotation_angle[index]
-
-    #         # Compute rotation matrices for all joints of this contact
-    #         j_Rotation_matrix_list = [self.joint_rotation_matrix_aboutZ(theta)
-    #                                   for _ in range(num_joints_per_contact_point)]
-
-    #         R_contact_matrix = np.eye(3)
-    #         for R_joint in j_Rotation_matrix_list:
-    #             R_contact_matrix = np.matmul(R_contact_matrix, R_joint)
-            
-    #         zero_matrix = np.zeros((3,3))
-    #         R_Ci_N = np.block([
-    #             [R_contact_matrix, zero_matrix],
-    #             [zero_matrix, R_contact_matrix]
-    #         ])
-
-    #         print(f"\nRotation matrix for contact {index}:\n{R_Ci_N}")
-    #         R_contact_list.append(R_Ci_N)
-    #     return R_contact_list 
-    
-    #Function to calculate the grasp martrix of the entire object and contact points
-    # def grasp_matrix(self, object_center_location, contact_points_locations, joints_list, contact_rotation_angle):
-    #     R_contact_list = self.R_ci_N_Matrix(contact_points_locations, joints_list, contact_rotation_angle)
-
-    #     rows = []
-    #     for i_index, point_vector in enumerate(contact_points_locations):
-    #         r = self.vector_subtraction(object_center_location, point_vector)
-    #         r_skew = self.skew_symmetric_matrix(r)
-
-    #         identity_matrix = np.eye(3)
-    #         zero_matrix = np.zeros((3,3))
-    #         Pi = np.block([
-    #             [identity_matrix, r_skew],
-    #             [zero_matrix, identity_matrix]
-    #         ])
-
-    #         print(f"\nPi matrix for contact {i_index}:\n{Pi}")
-    #         print(f"Corresponding rotation matrix:\n{R_contact_list[i_index]}")
-
-    #         G_Matrix = np.matmul(Pi, R_contact_list[i_index])
-    #         print(f"Grasp matrix for contact {i_index}:\n{G_Matrix}")
-    #         rows.append(G_Matrix)
-
-    #     Full_Grasp_Matrix_Transpose = np.vstack(rows)
-    #     return Full_Grasp_Matrix_Transpose
-
+    #Determines the Grasp Matrix of an object given the object's center, the closest point on the object, and the opposite closest point on the object
     def grasp_matrix(self, comcoord, closest, opposite):
 
         # Define 3x1 points for contacts and center
         c1 = np.array([int(closest[0]), int(closest[1]), 0])
         c2 = np.array([int(opposite[0]), int(opposite[1]), 0])
+
+        #Assemble the 1x3 Matrix of Center of Object Coordinates
         center = np.array([int(comcoord[0]), int(comcoord[1]), 0])
         
         #Create skew symmetric matrices
         skew1 = self.skew_symmetric_matrix(np.subtract(c1, center))
         skew2 = self.skew_symmetric_matrix(np.subtract(c2, center))
 
-        # Create P matrices
+        #Declares a 3x3 Identity Matrix
         identity_matrix = np.eye(3)
+
+        #Declares a 3x3 Matrix of 0's
         zero_matrix = np.zeros((3,3))
+
+        # Create P matrices
         p1 = np.block([
                 [identity_matrix, np.transpose(skew1)],
                 [zero_matrix, identity_matrix]
@@ -350,9 +251,7 @@ class ImageSubscriber(Node):
                 ])
         
         #Create rotation blockdiag matrices
-
         RtoContact1 = self.calculateR_Matrix(center, c1)
-        print(RtoContact1)
         RtoContact2 = self.calculateR_Matrix(center, c2)
 
         #Grasp matrices
@@ -361,14 +260,21 @@ class ImageSubscriber(Node):
     
         return np.vstack((g1,g2))
     
+    #Calculate a Rotation Matrix with a given center point of an object, and the contact point of the object.
     def calculateR_Matrix(self, center_point, contact_point):
-
+        #Calculate the Unit Vector for the given center point of an object, the contact point
         UnitVector, unused = self.find_Unit_Vector(center_point, contact_point, np.array([1, 0, 0]))
 
+        #Subtract the Unit Vector from the Determined Vector
         Resultant = np.array([1,0, 0]) - UnitVector
 
+        #Calculate the Rotation Matrix with the given Resultant's Values
         R_Bar_Frame = self.joint_rotation_matrix_aboutZ(Resultant[0], Resultant[1])
+
+        #Declares a 3x3 Matrix of 0's
         zero_matrix = np.zeros((3,3))
+
+        #Assemble Rotation Matrix Block
         R_Ci_N = np.block([
             [R_Bar_Frame, zero_matrix],
             [zero_matrix, R_Bar_Frame]
@@ -376,13 +282,17 @@ class ImageSubscriber(Node):
 
         return R_Ci_N
     
+    #Calculate the Minimum Singular Value Grasp Metric for a given Grasp Matrix 
     def calculate_MSV(self, grasp_matrix):
+        #Find all of the Singular Values through Singular Value Decomposition for a given Grasp Matrix 
         singular_values = np.linalg.svd(grasp_matrix, compute_uv=False)
 
+        #Find the Minimum Singular Value from the total list of all Singular Value
         singular_values_minimum = singular_values[-1]
 
         return singular_values_minimum
 
+#Main Function of Test Python File
 def main(args=None):
   # Initialize the rclpy library
   rclpy.init(args=args)
@@ -394,8 +304,6 @@ def main(args=None):
   rclpy.spin(image_subscriber)
   
   # Destroy the node explicitly
-  # (optional - otherwise it will be done automatically
-  # when the garbage collector destroys the node object)
   image_subscriber.destroy_node()
   
   # Shutdown the ROS client library for Python
